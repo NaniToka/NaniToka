@@ -17,13 +17,13 @@
 ## 🧬 Who Am I?
 
 ```yaml
-name        : Toka Nani
-role        : Aspiring DevOps & Cloud Engineer
-college     : MIC College of Technology, Vijayawada
-year        : 3rd Year CSE (Batch of 2028)
-ambassador  : Google Student Ambassador — Gemini Program 2026
-mindset     : [ "Build it", "Break it", "Fix it", "Ship it" ]
-currently   : Open to Internships | Hackathon Teams | OSS Collabs
+Name        : Toka Nani
+Role        : Aspiring DevOps & Cloud Engineer
+College     : MIC College of Technology, Vijayawada
+Year        : 3rd Year CSE (Batch of 2028)
+Ambassador  : Google Student Ambassador — Gemini Program 2026
+Mindset     : [ "Build it", "Break it", "Fix it", "Ship it" ]
+Currently   : Open to Internships | Hackathon Teams | OSS Collabs
 ```
 
 I live at the intersection of **Cloud**, **DevOps**, and **Generative AI** — not just studying these fields but shipping real products in them. Six hackathons competed. Rejected from GSoC. Still standing. Still building.
