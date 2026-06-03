@@ -14,8 +14,8 @@
 <a href="https://linkedin.com/in/toka-nani-33a124359"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 <a href="mailto:tokananiy@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 <a href="https://github.com/NaniToka"><img src="https://img.shields.io/badge/GitHub-161B22?style=for-the-badge&logo=github&logoColor=white"/></a>
-<a href="https://biasguard-81465231701.us-central1.run.app"><img src="https://img.shields.io/badge/%F0%9F%9B%A1%EF%B8%8F_BiasGuard_AI-LIVE-00b894?style=for-the-badge"/></a>
-<a href="https://votewise-ai-1069930919940.us-central1.run.app"><img src="https://img.shields.io/badge/%F0%9F%97%B3%EF%B8%8F_VoteWise_AI-LIVE-e17055?style=for-the-badge"/></a>
+<a href="https://biasguard-rzpoqg6s6a-uc.a.run.app/"><img src="https://img.shields.io/badge/%F0%9F%9B%A1%EF%B8%8F_BiasGuard_AI-LIVE-00b894?style=for-the-badge"/></a>
+<a href="https://votewise-ai-auoj3wixvq-uc.a.run.app/"><img src="https://img.shields.io/badge/%F0%9F%97%B3%EF%B8%8F_VoteWise_AI-LIVE-e17055?style=for-the-badge"/></a>
 
 </div>
 
@@ -60,7 +60,7 @@
 <tr>
 <td width="50%" valign="top">
 
-### 🛡️ [BiasGuard AI](https://biasguard-81465231701.us-central1.run.app)
+### 🛡️ [BiasGuard AI](https://biasguard-rzpoqg6s6a-uc.a.run.app/)
 **Forensic AI Accountability Platform**
 
 Turns ML black boxes into interpretable, auditable systems. Detects, visualizes and narrates bias across AI decision pipelines in real time.
@@ -76,7 +76,7 @@ Built for **Google Solution Challenge 2026**.
 </td>
 <td width="50%" valign="top">
 
-### 🗳️ [VoteWise AI](https://votewise-ai-1069930919940.us-central1.run.app)
+### 🗳️ [VoteWise AI](https://votewise-ai-auoj3wixvq-uc.a.run.app/)
 **Civic AI for First-Time Voters**
 
 A voter readiness assistant with a deterministic decision-tree engine + Gemini-powered Q&A. Democratizes civic participation for student voters.
