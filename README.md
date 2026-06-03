@@ -1,77 +1,134 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0a,40:0d2137,100:00c9ff&height=220&section=header&text=Toka%20Nani&fontSize=80&fontColor=ffffff&fontAlignY=38&desc=DevOps%20Engineer%20%E2%80%A2%20Cloud%20Builder%20%E2%80%A2%20AI%20Systems&descAlignY=60&descColor=00c9ff&animation=fadeIn" width="100%"/>
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=20&pause=1200&color=00C9FF&center=true&vCenter=true&width=750&lines=B.Tech+CSE+%E2%80%9828+%40+MIC+College+of+Technology%2C+Vijayawada;Google+Student+Ambassador+%F0%9F%94%B4+Gemini+Program+2026;2+Live+AI+Products+on+Google+Cloud+Run+%F0%9F%9A%80;Certified+%7C+Google+AI+Essentials+%E2%80%A2+Prompting+%E2%80%A2+Claude+Code;Open+to+SWE+%2F+DevOps+Internships+2025%E2%80%9326)](https://git.io/typing-svg)
+<!-- HERO BANNER -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,12,20,30&height=280&section=header&text=Toka%20Nani&fontSize=90&fontColor=fff&fontAlignY=40&desc=DevOps%20%E2%80%A2%20Cloud%20Engineering%20%E2%80%A2%20Generative%20AI&descSize=22&descAlignY=62&descColor=c8f0ff&animation=fadeIn" width="100%"/>
 
 </div>
-
----
 
 <div align="center">
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/toka-nani-33a124359)
-[![Gmail](https://img.shields.io/badge/Gmail-tokananiy%40gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tokananiy@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-NaniToka-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/NaniToka)
-[![BiasGuard AI](https://img.shields.io/badge/🛡️_BiasGuard_AI-LIVE_on_GCP-00c9ff?style=for-the-badge)](https://biasguard-81465231701.us-central1.run.app)
-[![VoteWise AI](https://img.shields.io/badge/🗳️_VoteWise_AI-LIVE_on_GCP-ff6b35?style=for-the-badge)](https://votewise-ai-1069930919940.us-central1.run.app)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&width=800&lines=Google+Student+Ambassador+%7C+Gemini+Program+2026+%F0%9F%94%B4;2+Live+AI+Products+Deployed+on+Google+Cloud+Run+%F0%9F%9A%80;Certified+%3A+Google+AI+%E2%80%A2+Prompting+%E2%80%A2+Claude+Code+%E2%80%A2+Claude+101;B.Tech+CSE+%E2%80%9828+%40+MIC+College+of+Technology%2C+Vijayawada;Open+to+SWE+%2F+DevOps+Internships+2025%E2%80%9326+%E2%80%94+Let%27s+build+something.)](https://git.io/typing-svg)
+
+<br/>
+
+<a href="https://linkedin.com/in/toka-nani-33a124359"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
+<a href="mailto:tokananiy@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://github.com/NaniToka"><img src="https://img.shields.io/badge/GitHub-161B22?style=for-the-badge&logo=github&logoColor=white"/></a>
+<a href="https://biasguard-81465231701.us-central1.run.app"><img src="https://img.shields.io/badge/%F0%9F%9B%A1%EF%B8%8F_BiasGuard_AI-LIVE-00b894?style=for-the-badge"/></a>
+<a href="https://votewise-ai-1069930919940.us-central1.run.app"><img src="https://img.shields.io/badge/%F0%9F%97%B3%EF%B8%8F_VoteWise_AI-LIVE-e17055?style=for-the-badge"/></a>
 
 </div>
 
+<br/>
+
 ---
 
-## `whoami`
+## 🧬 About Me
 
 ```yaml
-Name         : Toka Nani
-Role         : Aspiring DevOps & Cloud Engineer
-Location     : Vijayawada, Andhra Pradesh, India
-College      : MIC College of Technology (B.Tech CSE, Batch 2028)
-Ambassador   : Google Student Ambassador — Gemini Program 2026
-Now          : Building AI products · Grinding DSA · Open to Internships
+───────────────────────────────────────────────────────────────
+  TOKA NANI  ·  DevOps & Cloud Engineer  ·  Vijayawada, India
+───────────────────────────────────────────────────────────────
+  College     :  MIC College of Technology (B.Tech CSE, 2028)
+  Ambassador  :  Google Student Ambassador — Gemini Program 2026
+  Status      :  Open to SWE / DevOps Internships 2025–26
 
-# What makes me different:
-shipped      : 2 live AI products on Google Cloud Run
-competed     : 6+ hackathons — Google Solution Challenge, PromptWars, Meta PyTorch
-certified    : Google AI Essentials · Google Prompting Essentials · Claude Code in Action · Claude 101
-mindset      : [ "Build it", "Break it", "Fix it", "Ship it" ]
+  shipped     :  2 live AI products on Google Cloud Run
+  competed    :  6+ hackathons (Google, Meta PyTorch, PromptWars)
+  certified   :  Google AI Essentials · Prompting Essentials
+                 Claude Code in Action · Claude 101 (Anthropic)
+                 Intro to Generative AI (Google Cloud)
+  mindset     :  Build → Break → Fix → Ship → Repeat
+───────────────────────────────────────────────────────────────
 ```
 
-> I don't just study Cloud, DevOps, and AI — I **ship things** with them.  
-> Two live production apps. Six hackathons. One GSoC rejection that taught me more than any lecture.
+> I don't just **study** Cloud, DevOps, and Generative AI.
+> I **deploy** things. Two live products in production on GCP. Six hackathons. One GSoC rejection that made me sharper.
+> Rejections don't stop me — they redirect me.
+
+<br/>
 
 ---
 
-## 🚀 Live Products
+## 🚀 Live Products in Production
 
-<div align="center">
+> Both apps are containerized, deployed to **Google Cloud Run**, and live right now.
 
-| | Project | What It Does | Stack | Status |
-|---|---------|-------------|-------|--------|
-| 🛡️ | **[BiasGuard AI](https://biasguard-81465231701.us-central1.run.app)** | Forensic AI auditing platform — turns ML "black boxes" into accountable, interpretable systems. Detects, visualizes & narrates bias in real-time. *Built for Google Solution Challenge 2026.* | `Python` `Flask` `Gemini 1.5` `Firestore` `Cloud Run` `GCP` | ✅ Live |
-| 🗳️ | **[VoteWise AI](https://votewise-ai-1069930919940.us-central1.run.app)** | Voter readiness assistant for first-time and student voters. Deterministic decision-tree + Gemini-powered Q&A. *Built for PromptWars.* | `React` `TypeScript` `Vite` `Gemini 1.5` `Docker` `Cloud Run` | ✅ Live |
-| 📊 | **[Resume Match Engine](https://github.com/NaniToka/resume-match-engine)** | AI-powered resume–JD semantic scorer. Detects skill gaps and flags scam job descriptions for campus hiring workflows. | `Python` `Streamlit` `NLP` | 📁 Repo |
-| 📓 | **[DevTrackr](https://github.com/NaniToka/DevTrackr)** | Full-stack dashboard integrating GitHub REST API + Firebase to track daily coding streaks. Deployed on Vercel. | `JavaScript` `HTML/CSS` `Firebase` `GitHub API` `Vercel` | 📁 Repo |
+<br/>
 
-</div>
+<table width="100%">
+<tr>
+<td width="50%" valign="top">
+
+### 🛡️ [BiasGuard AI](https://biasguard-81465231701.us-central1.run.app)
+**Forensic AI Accountability Platform**
+
+Turns ML black boxes into interpretable, auditable systems. Detects, visualizes and narrates bias across AI decision pipelines in real time.
+
+Built for **Google Solution Challenge 2026**.
+
+**Stack:**
+`Python` `Flask` `Gemini 1.5 Pro` `Firestore`
+`Docker` `Cloud Run` `GCP`
+
+![Status](https://img.shields.io/badge/status-LIVE_on_Cloud_Run-00b894?style=flat-square)
+
+</td>
+<td width="50%" valign="top">
+
+### 🗳️ [VoteWise AI](https://votewise-ai-1069930919940.us-central1.run.app)
+**Civic AI for First-Time Voters**
+
+A voter readiness assistant with a deterministic decision-tree engine + Gemini-powered Q&A. Democratizes civic participation for student voters.
+
+Built for **PromptWars Hackathon**.
+
+**Stack:**
+`React` `TypeScript` `Vite` `Gemini 1.5`
+`Docker` `Cloud Run`
+
+![Status](https://img.shields.io/badge/status-LIVE_on_Cloud_Run-e17055?style=flat-square)
+
+</td>
+</tr>
+</table>
+
+<br/>
+
+<details>
+<summary><b>📦 More Projects (click to expand)</b></summary>
+
+<br/>
+
+| Project | Description | Stack | Link |
+|---------|-------------|-------|------|
+| 📊 **Resume Match Engine** | AI resume–JD semantic scorer. Detects skill gaps & flags scam JDs for campus hiring. | `Python` `Streamlit` `NLP` | [→ Repo](https://github.com/NaniToka/resume-match-engine) |
+| 📓 **DevTrackr** | Full-stack coding dashboard: GitHub REST API + Firebase for real-time streak tracking. Deployed on Vercel. | `JS` `HTML/CSS` `Firebase` `GitHub API` | [→ Live](https://dev-trackr-pearl.vercel.app) |
+| 🧮 **DSA Practice** | 22+ commits. Arrays, DP, Trees, Linked Lists — systematic interview prep in Python. | `Python` `DSA` | [→ Repo](https://github.com/NaniToka/DSA-Practice) |
+
+</details>
+
+<br/>
 
 ---
 
-## 🏅 Certifications & Credentials
+## 🏅 Certifications — All Verified
 
 <div align="center">
 
-| Credential | Issuer | Date | Verify |
-|-----------|--------|------|--------|
-| **Google AI Essentials** *(5-course specialization)* | Google / Coursera | May 2026 | [🔗 Verify](https://coursera.org/verify/specialization/HUK5A6SI7Q5K) |
-| **Google Prompting Essentials** *(4-course specialization)* | Google / Coursera | May 2026 | [🔗 Verify](https://coursera.org/verify/specialization/HAXF8PBC6D2I) |
-| **Claude Code in Action** | Anthropic | Mar 2026 | [🔗 Verify](https://verify.skilljar.com/c/e8sdwwdwxw78) |
-| **Claude 101** | Anthropic | 2026 | ✅ Certified |
-| **Introduction to Generative AI** | Google Cloud | 2025 | ✅ Certified |
-| **Resume Writing with AI** | Forage | 2025 | ✅ Certified |
-| **Google Student Ambassador** — Gemini Program | Google | May 2026 | 🔴 Active |
+| # | Certification | Issuer | Date | Verification |
+|---|--------------|--------|------|-------------|
+| 1 | **Google AI Essentials** *(5-course specialization)* | Google / Coursera | May 2026 | [![Verify](https://img.shields.io/badge/Verify-blue?style=flat-square&logo=coursera)](https://coursera.org/verify/specialization/HUK5A6SI7Q5K) |
+| 2 | **Google Prompting Essentials** *(4-course specialization)* | Google / Coursera | May 2026 | [![Verify](https://img.shields.io/badge/Verify-blue?style=flat-square&logo=coursera)](https://coursera.org/verify/specialization/HAXF8PBC6D2I) |
+| 3 | **Claude Code in Action** | Anthropic | Mar 2026 | [![Verify](https://img.shields.io/badge/Verify-CC785C?style=flat-square)](https://verify.skilljar.com/c/e8sdwwdwxw78) |
+| 4 | **Claude 101** | Anthropic | 2026 | ✅ Certified |
+| 5 | **Introduction to Generative AI** | Google Cloud | 2025 | ✅ Certified |
+| 6 | **Resume Writing with AI** | Forage | 2025 | ✅ Certified |
+| 7 | **Google Student Ambassador** — Gemini Program 2026 | Google | May 2026 | 🔴 Active |
 
 </div>
+
+<br/>
 
 ---
 
@@ -79,92 +136,87 @@ mindset      : [ "Build it", "Break it", "Fix it", "Ship it" ]
 
 <div align="center">
 
-**Languages**
+### Languages
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
+### Cloud & DevOps
+![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
+![Cloud Run](https://img.shields.io/badge/Cloud_Run-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Firestore](https://img.shields.io/badge/Firestore-FF6F00?style=for-the-badge&logo=firebase&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-**Cloud & DevOps**
-
-![GCP](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Cloud Run](https://img.shields.io/badge/Cloud_Run-4285F4?style=flat-square&logo=google-cloud&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black)
-![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
-
-**AI & Frameworks**
-
-![Gemini](https://img.shields.io/badge/Gemini_1.5-8E75B2?style=flat-square&logo=google&logoColor=white)
-![Claude](https://img.shields.io/badge/Claude_Code-CC785C?style=flat-square&logo=anthropic&logoColor=white)
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
-![Flask](https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+### AI & Frameworks
+![Gemini](https://img.shields.io/badge/Gemini_1.5_Pro-8E75B2?style=for-the-badge&logo=google&logoColor=white)
+![Claude](https://img.shields.io/badge/Claude_Code-CC785C?style=for-the-badge&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
 </div>
-
----
-
-## 📊 GitHub Stats
-
-<div align="center">
-
-<img src="https://github-readme-stats.vercel.app/api?username=NaniToka&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00c9ff&icon_color=00c9ff&text_color=c9d1d9&ring_color=00c9ff&include_all_commits=true&count_private=true" height="170"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NaniToka&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00c9ff&text_color=c9d1d9" height="170"/>
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com?user=NaniToka&theme=tokyonight&hide_border=true&background=0d1117&ring=00c9ff&fire=ff6b35&currStreakLabel=00c9ff" width="520"/>
-
-</div>
-
 ---
 
-## 🏆 GitHub Trophies
+## 📊 GitHub Activity
 
 <div align="center">
 
-[![Trophies](https://github-profile-trophy.vercel.app/?username=NaniToka&theme=tokyonight&no-frame=true&row=1&column=7&margin-w=8)](https://github.com/ryo-ma/github-profile-trophy)
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=NaniToka&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=8b949e&ring_color=58a6ff&include_all_commits=true&count_private=true"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=NaniToka&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=8b949e"/>
+
+<br/><br/>
+
+<img src="https://github-readme-streak-stats.herokuapp.com?user=NaniToka&theme=github-dark-blue&hide_border=true&background=0d1117&ring=58a6ff&fire=ff7b72&currStreakLabel=58a6ff&dates=8b949e" width="500"/>
 
 </div>
 
----
-
-## 🎯 Competitive Record
-
-| Event | Result | What I Built |
-|-------|--------|-------------|
-| **Google Solution Challenge 2026** | Competed | BiasGuard AI — bias auditing for ML systems |
-| **PromptWars** | Competed | VoteWise AI — deployed to production |
-| **Meta PyTorch Hackathon** | Competed | Deep learning application |
-| **Google Summer of Code** | Applicant | Rejected. Learned. Applied again next year. |
-| **5+ Additional Hackathons** | Competed | Rapid prototypes, 24–48hr delivery |
-
-> *Six hackathons. One GSoC rejection. Zero plans to stop.*
+<br/>
 
 ---
 
-## 📌 Currently
-
-- 🔴 **Google Student Ambassador** — running workshops on Gemini AI across campus
-- 🚢 **Shipping** AI tools that tackle real social problems (bias, civic engagement)
-- 📚 **DSA grind** — daily LeetCode → [DSA-Practice](https://github.com/NaniToka/DSA-Practice)
-- 🤝 **Open to** SWE/DevOps internships · hackathon teams · open source collaborations
-
----
-
-## 📈 Contribution Activity
+## 🏆 Trophy Case
 
 <div align="center">
 
-[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=NaniToka&bg_color=0d1117&color=00c9ff&line=00c9ff&point=ff6b35&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+[![Trophies](https://github-profile-trophy.vercel.app/?username=NaniToka&theme=algolia&no-frame=true&row=1&column=7&margin-w=6)](https://github.com/ryo-ma/github-profile-trophy)
+
+</div>
+
+<br/>
+
+---
+
+## 🎖️ Competitive Record
+
+| Event | Org | Deliverable |
+|-------|-----|------------|
+| **Google Solution Challenge 2026** | Google | BiasGuard AI — live forensic ML bias auditor |
+| **PromptWars Hackathon** | Community | VoteWise AI — live civic AI, production-deployed |
+| **Meta PyTorch Hackathon** | Meta / PyTorch | Deep learning application |
+| **Google Summer of Code** | Google | Applicant — rejected, came back stronger |
+| **3+ Additional Hackathons** | Various | Rapid prototypes, 24–48hr delivery under pressure |
+
+<br/>
+
+---
+
+## 📈 Contribution Graph
+
+<div align="center">
+
+[![Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=NaniToka&bg_color=0d1117&color=58a6ff&line=58a6ff&point=ff7b72&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
 
 </div>
 
@@ -177,21 +229,36 @@ mindset      : [ "Build it", "Break it", "Fix it", "Ship it" ]
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/NaniToka/NaniToka/output/github-snake-dark.svg"/>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/NaniToka/NaniToka/output/github-snake.svg"/>
-  <img alt="github contribution snake" src="https://raw.githubusercontent.com/NaniToka/NaniToka/output/github-snake.svg"/>
+  <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/NaniToka/NaniToka/output/github-snake.svg"/>
 </picture>
 
 </div>
+
+<br/>
+
+---
+
+## 📌 Right Now
+
+- 🔴 **Google Student Ambassador** — running Gemini AI workshops across campus at MIC CoT
+- 🚢 **Shipping** AI tools for social impact (bias, civic tech, accessibility)
+- 📚 **DSA daily** → [`NaniToka/DSA-Practice`](https://github.com/NaniToka/DSA-Practice)
+- 🤝 **Looking for** SWE / DevOps internships · open source collabs · hackathon teams
+
+<br/>
 
 ---
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00c9ff,50:0d2137,100:0a0a0a&height=130&section=footer&text=Let%27s%20build%20something%20that%20matters&fontSize=18&fontColor=ffffff&fontAlignY=55" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,12,20&height=140&section=footer&text=Let%27s%20build%20something%20that%20matters&fontSize=20&fontColor=fff&fontAlignY=55&desc=tokananiy%40gmail.com&descAlignY=80&descColor=c8f0ff" width="100%"/>
 
-**📬 tokananiy@gmail.com · [LinkedIn](https://linkedin.com/in/toka-nani-33a124359) · [GitHub](https://github.com/NaniToka)**
+<br/>
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect_with_me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/toka-nani-33a124359)
 
 > *"Rejections don't stop me — they redirect me."*
 
-![Profile Views](https://komarev.com/ghpvc/?username=NaniToka&color=00c9ff&style=for-the-badge&label=PROFILE+VIEWS)
+![Profile Views](https://komarev.com/ghpvc/?username=NaniToka&color=58a6ff&style=for-the-badge&label=PROFILE+VIEWS)
 
 </div>
