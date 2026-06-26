@@ -14,6 +14,7 @@
 <a href="https://linkedin.com/in/toka-nani-33a124359"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
 <a href="mailto:tokananiy@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 <a href="https://github.com/NaniToka"><img src="https://img.shields.io/badge/GitHub-161B22?style=for-the-badge&logo=github&logoColor=white"/></a>
+<a href="https://toka-portfolio-2.onrender.com"><img src="https://img.shields.io/badge/%F0%9F%8C%90_Portfolio-Visit_Now-6c5ce7?style=for-the-badge"/></a>
 <a href="https://biasguard-rzpoqg6s6a-uc.a.run.app/"><img src="https://img.shields.io/badge/%F0%9F%9B%A1%EF%B8%8F_BiasGuard_AI-LIVE-00b894?style=for-the-badge"/></a>
 <a href="https://votewise-ai-auoj3wixvq-uc.a.run.app/"><img src="https://img.shields.io/badge/%F0%9F%97%B3%EF%B8%8F_VoteWise_AI-LIVE-e17055?style=for-the-badge"/></a>
 
@@ -38,6 +39,7 @@
   certified   :  Google AI Essentials · Prompting Essentials
                  Claude Code in Action · Claude 101 (Anthropic)
                  Intro to Generative AI (Google Cloud)
+  portfolio   :  https://toka-portfolio-2.onrender.com
   mindset     :  Build → Break → Fix → Ship → Repeat
 ───────────────────────────────────────────────────────────────
 ```
@@ -241,6 +243,7 @@ Built for **PromptWars Hackathon**.
 ## 📌 Right Now
 
 - 🔴 **Google Student Ambassador** — running Gemini AI workshops across campus at MIC CoT
+- 🌐 **Portfolio live** at [toka-portfolio-2.onrender.com](https://toka-portfolio-2.onrender.com)
 - 🚢 **Shipping** AI tools for social impact (bias, civic tech, accessibility)
 - 📚 **DSA daily** → [`NaniToka/DSA-Practice`](https://github.com/NaniToka/DSA-Practice)
 - 🤝 **Looking for** SWE / DevOps internships · open source collabs · hackathon teams
@@ -256,6 +259,7 @@ Built for **PromptWars Hackathon**.
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect_with_me-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/toka-nani-33a124359)
+[![Portfolio](https://img.shields.io/badge/Portfolio-toka--portfolio--2.onrender.com-6c5ce7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://toka-portfolio-2.onrender.com)
 
 > *"Rejections don't stop me — they redirect me."*
 
