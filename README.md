@@ -7,7 +7,7 @@
 
 <div align="center">
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&width=800&lines=Google+Student+Ambassador+%7C+Gemini+Program+2026+%F0%9F%94%B4;2+Live+AI+Products+Deployed+on+Google+Cloud+Run+%F0%9F%9A%80;Certified+%3A+Google+AI+%E2%80%A2+Prompting+%E2%80%A2+Claude+Code+%E2%80%A2+Claude+101;B.Tech+CSE+%E2%80%9828+%40+MIC+College+of+Technology%2C+Vijayawada;Open+to+SWE+%2F+DevOps+Internships+2025%E2%80%9326+%E2%80%94+Let%27s+build+something.)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1000&color=58A6FF&center=true&vCenter=true&multiline=false&width=800&lines=Google+Student+Ambassador+%7C+Gemini+Program+2026+%F0%9F%94%B4;3+Live+AI+Products+Deployed+on+Google+Cloud%2FRender+%F0%9F%9A%80;Certified+%3A+Google+AI+%E2%80%A2+Prompting+%E2%80%A2+Claude+Code+%E2%80%A2+Claude+101;B.Tech+CSE+%E2%80%9928+%40+MIC+College+of+Technology%2C+Vijayawada;Open+to+SWE+%2F+DevOps+Internships+2026+%E2%80%94+Let%27s+build+something.)](https://git.io/typing-svg)
 
 <br/>
 
@@ -15,6 +15,7 @@
 <a href="mailto:tokananiy@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 <a href="https://github.com/NaniToka"><img src="https://img.shields.io/badge/GitHub-161B22?style=for-the-badge&logo=github&logoColor=white"/></a>
 <a href="https://toka-portfolio-2.onrender.com"><img src="https://img.shields.io/badge/%F0%9F%8C%90_Portfolio-Visit_Now-6c5ce7?style=for-the-badge"/></a>
+<a href="https://tokenflow-ai.onrender.com/"><img src="https://img.shields.io/badge/%E2%9A%A1_TokenFlow_AI-LIVE-f39c12?style=for-the-badge"/></a>
 <a href="https://biasguard-rzpoqg6s6a-uc.a.run.app/"><img src="https://img.shields.io/badge/%F0%9F%9B%A1%EF%B8%8F_BiasGuard_AI-LIVE-00b894?style=for-the-badge"/></a>
 <a href="https://votewise-ai-auoj3wixvq-uc.a.run.app/"><img src="https://img.shields.io/badge/%F0%9F%97%B3%EF%B8%8F_VoteWise_AI-LIVE-e17055?style=for-the-badge"/></a>
 
@@ -32,9 +33,9 @@
 ───────────────────────────────────────────────────────────────
   College     :  MIC College of Technology (B.Tech CSE, 2028)
   Ambassador  :  Google Student Ambassador — Gemini Program 2026
-  Status      :  Open to SWE / DevOps Internships 2025–26
+  Status      :  Open to SWE / DevOps Internships 2026
 
-  shipped     :  2 live AI products on Google Cloud Run
+  shipped     :  3 live AI products in production
   competed    :  6+ hackathons (Google, Meta PyTorch, PromptWars)
   certified   :  Google AI Essentials · Prompting Essentials
                  Claude Code in Action · Claude 101 (Anthropic)
@@ -45,7 +46,7 @@
 ```
 
 > I don't just **study** Cloud, DevOps, and Generative AI.
-> I **deploy** things. Two live products in production on GCP. Six hackathons. One GSoC rejection that made me sharper.
+> I **deploy** things. Three live products in production. Six hackathons. One GSoC rejection that made me sharper.
 > Rejections don't stop me — they redirect me.
 
 <br/>
@@ -54,7 +55,21 @@
 
 ## 🚀 Live Products in Production
 
-> Both apps are containerized, deployed to **Google Cloud Run**, and live right now.
+> All three apps are containerized and deployed live — try them right now.
+
+<br/>
+
+### ⚡ [TokenFlow AI](https://tokenflow-ai.onrender.com/) — Prompt Memory Optimizer
+**Real-time semantic ranking & context-compression middleware for LLM apps**
+
+Cuts LLM context bloat by scoring past conversation turns with embeddings + recency decay, then compresses them into structured summaries — reducing token usage **50–75%+ per request** without losing critical history.
+
+Built solo in a weekend hackathon sprint.
+
+**Stack:** `FastAPI` `Python` `Gemini 1.5 Flash` `text-embedding-004` `React` `Cloud Run`
+
+[![Live Demo](https://img.shields.io/badge/Live_Demo-tokenflow--ai.onrender.com-f39c12?style=flat-square)](https://tokenflow-ai.onrender.com/)
+[![Repo](https://img.shields.io/badge/Repo-GitHub-161B22?style=flat-square&logo=github)](https://github.com/NaniToka/TokenFlow-AI)
 
 <br/>
 
@@ -157,8 +172,9 @@ Built for **PromptWars Hackathon**.
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 ### AI & Frameworks
-![Gemini](https://img.shields.io/badge/Gemini_1.5_Pro-8E75B2?style=for-the-badge&logo=google&logoColor=white)
+![Gemini](https://img.shields.io/badge/Gemini_1.5-8E75B2?style=for-the-badge&logo=google&logoColor=white)
 ![Claude](https://img.shields.io/badge/Claude_Code-CC785C?style=for-the-badge&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
@@ -175,7 +191,7 @@ Built for **PromptWars Hackathon**.
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=NaniToka&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=8b949e&ring_color=58a6ff&include_all_commits=true&count_private=true"/>
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=NaniToka&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&icon_color=58a6ff&text_color=8b949e&ring_color=58a6ff&count_private=true"/>
 <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=NaniToka&layout=compact&theme=github_dark&hide_border=true&bg_color=0d1117&title_color=58a6ff&text_color=8b949e"/>
 
 <br/><br/>
@@ -206,9 +222,10 @@ Built for **PromptWars Hackathon**.
 |-------|-----|------------|
 | **Google Solution Challenge 2026** | Google | BiasGuard AI — live forensic ML bias auditor |
 | **PromptWars Hackathon** | Community | VoteWise AI — live civic AI, production-deployed |
+| **Weekend Hackathon Sprint** | Community | TokenFlow AI — live LLM memory-optimization middleware |
 | **Meta PyTorch Hackathon** | Meta / PyTorch | Deep learning application |
 | **Google Summer of Code** | Google | Applicant — rejected, came back stronger |
-| **3+ Additional Hackathons** | Various | Rapid prototypes, 24–48hr delivery under pressure |
+| **2+ Additional Hackathons** | Various | Rapid prototypes, 24–48hr delivery under pressure |
 
 <br/>
 
@@ -243,6 +260,7 @@ Built for **PromptWars Hackathon**.
 ## 📌 Right Now
 
 - 🔴 **Google Student Ambassador** — running Gemini AI workshops across campus at MIC CoT
+- ⚡ **Just shipped** TokenFlow AI — a live prompt-memory optimizer for LLM apps
 - 🌐 **Portfolio live** at [toka-portfolio-2.onrender.com](https://toka-portfolio-2.onrender.com)
 - 🚢 **Shipping** AI tools for social impact (bias, civic tech, accessibility)
 - 📚 **DSA daily** → [`NaniToka/DSA-Practice`](https://github.com/NaniToka/DSA-Practice)
