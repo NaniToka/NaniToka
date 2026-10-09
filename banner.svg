@@ -1,34 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240" role="img" aria-label="Toka Nani, Cloud and GenAI Engineer">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-label="Toka Nani, Cloud and GenAI Engineer. 4 live AI products, 13+ hackathons, 74 percent token reduction, 37 passing tests.">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#6c5ce7"/>
-      <stop offset="1" stop-color="#0984e3"/>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#a29bfe"/>
+      <stop offset="0.5" stop-color="#74b9ff"/>
+      <stop offset="1" stop-color="#55efc4"/>
     </linearGradient>
-    <radialGradient id="glow" cx="0.8" cy="0.2" r="0.6">
-      <stop offset="0" stop-color="#ffffff" stop-opacity="0.28"/>
-      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0f19"/>
+      <stop offset="1" stop-color="#141a2e"/>
+    </linearGradient>
+    <radialGradient id="blobA" cx="0.15" cy="0.2" r="0.5">
+      <stop offset="0" stop-color="#6c5ce7" stop-opacity="0.45"/>
+      <stop offset="1" stop-color="#6c5ce7" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="blobB" cx="0.9" cy="0.9" r="0.5">
+      <stop offset="0" stop-color="#0984e3" stop-opacity="0.40"/>
+      <stop offset="1" stop-color="#0984e3" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    </pattern>
     <style>
-      .title { font: 800 64px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #ffffff; letter-spacing: 1px; }
-      .sub { font: 500 24px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #e8e6ff; letter-spacing: 4px; }
-      .tag { font: 500 16px 'Courier New', monospace; fill: #dfe9ff; opacity: 0.9; }
-      .float { animation: drift 6s ease-in-out infinite alternate; }
-      .float2 { animation: drift 8s ease-in-out infinite alternate-reverse; }
-      @keyframes drift { from { transform: translateY(0); } to { transform: translateY(12px); } }
+      .name { font: 800 78px 'Segoe UI', Helvetica, Arial, sans-serif; fill: url(#accent); letter-spacing: -1px; }
+      .role { font: 600 30px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #e6edf3; }
+      .stack { font: 500 17px 'Courier New', monospace; fill: #8b949e; }
+      .pill { font: 700 13px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #55efc4; letter-spacing: 2px; }
+      .num { font: 800 44px 'Segoe UI', Helvetica, Arial, sans-serif; fill: url(#accent); }
+      .lbl { font: 500 14px 'Segoe UI', Helvetica, Arial, sans-serif; fill: #9aa4b2; }
+      .dot { animation: pulse 1.8s ease-in-out infinite; }
+      .bar { animation: slide 4s ease-in-out infinite alternate; }
+      @keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: 0.25; } }
+      @keyframes slide { from { transform: translateX(0); } to { transform: translateX(160px); } }
     </style>
   </defs>
-  <rect width="1200" height="240" fill="url(#bg)"/>
-  <rect width="1200" height="240" fill="url(#glow)"/>
-  <g opacity="0.14" fill="none" stroke="#ffffff" stroke-width="2">
-    <circle class="float" cx="1040" cy="70" r="90"/>
-    <circle class="float2" cx="1110" cy="190" r="55"/>
-    <circle class="float" cx="120" cy="200" r="70"/>
+
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#grid)"/>
+  <rect width="1200" height="320" fill="url(#blobA)"/>
+  <rect width="1200" height="320" fill="url(#blobB)"/>
+
+  <rect x="70" y="52" width="268" height="30" rx="15" fill="#55efc4" fill-opacity="0.10" stroke="#55efc4" stroke-opacity="0.45"/>
+  <circle class="dot" cx="92" cy="67" r="5" fill="#55efc4"/>
+  <text x="108" y="72" class="pill">OPEN TO INTERNSHIPS 2026</text>
+
+  <text x="68" y="168" class="name">Toka Nani</text>
+  <text x="70" y="212" class="role">Cloud &amp; GenAI Engineer</text>
+  <text x="70" y="248" class="stack">Gemini · Vertex AI · Cloud Run · FastAPI · React</text>
+  <rect x="70" y="270" width="480" height="3" rx="1.5" fill="#ffffff" fill-opacity="0.08"/>
+  <rect class="bar" x="70" y="270" width="160" height="3" rx="1.5" fill="url(#accent)"/>
+
+  <g>
+    <rect x="690" y="52" width="210" height="104" rx="16" fill="#ffffff" fill-opacity="0.045" stroke="#ffffff" stroke-opacity="0.12"/>
+    <text x="712" y="106" class="num">4</text>
+    <text x="712" y="134" class="lbl">live AI products</text>
+
+    <rect x="920" y="52" width="210" height="104" rx="16" fill="#ffffff" fill-opacity="0.045" stroke="#ffffff" stroke-opacity="0.12"/>
+    <text x="942" y="106" class="num">13+</text>
+    <text x="942" y="134" class="lbl">hackathons</text>
+
+    <rect x="690" y="176" width="210" height="104" rx="16" fill="#ffffff" fill-opacity="0.045" stroke="#ffffff" stroke-opacity="0.12"/>
+    <text x="712" y="230" class="num">~74%</text>
+    <text x="712" y="258" class="lbl">prompt tokens cut</text>
+
+    <rect x="920" y="176" width="210" height="104" rx="16" fill="#ffffff" fill-opacity="0.045" stroke="#ffffff" stroke-opacity="0.12"/>
+    <text x="942" y="230" class="num">37</text>
+    <text x="942" y="258" class="lbl">passing tests</text>
   </g>
-  <g opacity="0.18" fill="#ffffff">
-    <circle cx="900" cy="40" r="4"/><circle cx="960" cy="120" r="3"/><circle cx="820" cy="190" r="5"/>
-    <circle cx="260" cy="30" r="3"/><circle cx="330" cy="205" r="4"/>
-  </g>
-  <text x="600" y="115" text-anchor="middle" class="title">Toka Nani</text>
-  <text x="600" y="158" text-anchor="middle" class="sub">CLOUD &amp; GENAI ENGINEER</text>
-  <text x="600" y="198" text-anchor="middle" class="tag">&lt;/&gt; LLM cost optimization · responsible AI · Google Cloud</text>
 </svg>
