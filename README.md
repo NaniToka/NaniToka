@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6c5ce7,100:0984e3&height=220&section=header&text=Toka%20Nani&fontSize=60&fontColor=ffffff&fontAlignY=38&desc=Cloud%20%26%20GenAI%20Engineer&descSize=22&descAlignY=60&animation=fadeIn" alt="Toka Nani banner" />
+<img src="https://raw.githubusercontent.com/NaniToka/NaniToka/main/banner.svg" alt="Toka Nani, Cloud and GenAI Engineer" width="100%" />
 
 <a href="https://github.com/NaniToka">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=6C5CE7&center=true&vCenter=true&width=760&lines=Building+LLM+cost-optimization+tooling;Shipping+ML+fairness+auditors+on+Google+Cloud;Google+Gemini+Student+Ambassador+%7C+B.Tech+CSE+%2728;Open+to+SWE+%2F+Cloud+%2F+DevOps+internships" alt="Typing SVG" />
@@ -186,6 +186,6 @@ flowchart LR
 
 [tokananiy@gmail.com](mailto:tokananiy@gmail.com) · [LinkedIn](https://linkedin.com/in/toka-nani-33a124359) · [Portfolio](https://toka-portfolio-2.onrender.com)
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:6c5ce7,100:0984e3&height=100&section=footer" alt="footer" />
+<img src="https://raw.githubusercontent.com/NaniToka/NaniToka/main/footer.svg" alt="footer" width="100%" />
 
 </div>
