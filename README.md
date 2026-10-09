@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/NaniToka/NaniToka/main/banner.svg" alt="Toka Nani, Cloud and GenAI Engineer" width="100%" />
+<img src="https://raw.githubusercontent.com/NaniToka/NaniToka/main/banner.svg?v=2" alt="Toka Nani, Cloud and GenAI Engineer" width="100%" />
 
 <a href="https://github.com/NaniToka">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=6C5CE7&center=true&vCenter=true&width=760&lines=Building+LLM+cost-optimization+tooling;Shipping+ML+fairness+auditors+on+Google+Cloud;Google+Gemini+Student+Ambassador+%7C+B.Tech+CSE+%2728;Open+to+SWE+%2F+Cloud+%2F+DevOps+internships" alt="Typing SVG" />
@@ -184,7 +184,10 @@ flowchart LR
 
 **Open to SWE / Cloud / DevOps internships.** I reply fast.
 
-[tokananiy@gmail.com](mailto:tokananiy@gmail.com) · [LinkedIn](https://linkedin.com/in/toka-nani-33a124359) · [Portfolio](https://toka-portfolio-2.onrender.com)
+<a href="mailto:tokananiy@gmail.com"><img height="46" src="https://img.shields.io/badge/EMAIL-tokananiy%40gmail.com-6c5ce7?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="https://linkedin.com/in/toka-nani-33a124359"><img height="46" src="https://img.shields.io/badge/LINKEDIN-Connect-0984e3?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://toka-portfolio-2.onrender.com/"><img height="46" src="https://img.shields.io/badge/PORTFOLIO-View_Live-00b894?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
+<a href="https://toka-portfolio-2.onrender.com/nani.pdf"><img height="46" src="https://img.shields.io/badge/RESUME-Download_PDF-e17055?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Resume" /></a>
 
 <img src="https://raw.githubusercontent.com/NaniToka/NaniToka/main/footer.svg" alt="footer" width="100%" />
 
