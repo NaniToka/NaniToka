@@ -39,7 +39,7 @@ I build **production-deployed AI products on Google Cloud**: not notebooks, live
 
 | 🚀 **4** | 🏆 **13+** | ⚡ **~74%** | 🧪 **37** |
 |:---:|:---:|:---:|:---:|
-| live deployed AI products | hackathons | prompt-token reduction (TokenFlow, own benchmark) | passing tests (CivicPulse scoring engine) |
+| Live Deployed AI Products | hackathons | prompt-token reduction (TokenFlow, own benchmark) | passing tests (CivicPulse scoring engine) |
 
 </div>
 
