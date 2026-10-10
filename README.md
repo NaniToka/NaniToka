@@ -25,7 +25,7 @@ I build **production-deployed AI products on Google Cloud**: not notebooks, live
 
 |   |   |
 |---|---|
-| 🎓 | B.Tech CSE '28 · DVR & Dr. HS MIC College of Technology (JNTUK) |
+| 🎓 | B.Tech CSE '28 · DVR & Dr. HS MIC College of Technology |
 | 🌟 | Google Gemini Student Ambassador (2026) |
 | 🧪 | Data Analyst Intern, Bluestock Fintech (Sep–Oct 2026) |
 | 🎯 | Seeking **SWE · Cloud · DevOps internships** · remote or relocation · available immediately |
