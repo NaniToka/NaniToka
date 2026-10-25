@@ -2,18 +2,23 @@
 """Fetch GitHub data via GraphQL and render stats + streak SVG cards."""
 import json
 import os
+import sys
+import urllib.error
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 USER = "NaniToka"
-TOKEN = os.environ.get("STATS_TOKEN") or os.environ["GITHUB_TOKEN"]
 OUT = Path("assets")
+
+TOKENS = [t for t in (os.environ.get("STATS_TOKEN"), os.environ.get("GITHUB_TOKEN")) if t]
+if not TOKENS:
+    sys.exit("No token available: neither STATS_TOKEN nor GITHUB_TOKEN is set")
+_active = {"i": 0}
 
 PROFILE_Q = """
 query($login: String!) {
   user(login: $login) {
-    createdAt
     followers { totalCount }
     pullRequests { totalCount }
     issues { totalCount }
@@ -43,33 +48,51 @@ query($login: String!, $from: DateTime!, $to: DateTime!) {
 
 
 def gql(query, variables):
-    req = urllib.request.Request(
-        "https://api.github.com/graphql",
-        data=json.dumps({"query": query, "variables": variables}).encode(),
-        headers={"Authorization": f"bearer {TOKEN}", "Content-Type": "application/json"},
-    )
-    with urllib.request.urlopen(req, timeout=30) as r:
-        data = json.load(r)
-    if "errors" in data:
-        raise SystemExit(f"GraphQL error: {data['errors']}")
-    return data["data"]["user"]
+    """Run a GraphQL query; on 401 retry with the next available token."""
+    while True:
+        token = TOKENS[_active["i"]]
+        req = urllib.request.Request(
+            "https://api.github.com/graphql",
+            data=json.dumps({"query": query, "variables": variables}).encode(),
+            headers={
+                "Authorization": f"bearer {token}",
+                "Content-Type": "application/json",
+                "User-Agent": "profile-stats-script",
+            },
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=60) as r:
+                data = json.load(r)
+        except urllib.error.HTTPError as e:
+            body = e.read().decode(errors="replace")
+            if e.code == 401 and _active["i"] + 1 < len(TOKENS):
+                print("Token rejected (401), falling back to the default token")
+                _active["i"] += 1
+                continue
+            sys.exit(f"HTTP {e.code} from GitHub: {body}")
+        if data.get("errors"):
+            sys.exit(f"GraphQL error: {data['errors']}")
+        return data["data"]["user"]
 
 
 def all_days(years):
     days = {}
     for y in years:
-        u = gql(YEAR_Q, {"login": USER, "from": f"{y}-01-01T00:00:00Z", "to": f"{y}-12-31T23:59:59Z"})
-        for w in u["contributionsCollection"]["contributionCalendar"]["weeks"]:
+        u = gql(
+            YEAR_Q,
+            {"login": USER, "from": f"{y}-01-01T00:00:00Z", "to": f"{y}-12-31T23:59:59Z"},
+        )
+        weeks = u["contributionsCollection"]["contributionCalendar"]["weeks"]
+        for w in weeks:
             for d in w["contributionDays"]:
                 days[datetime.strptime(d["date"], "%Y-%m-%d").date()] = d["contributionCount"]
     return days
 
 
 def streaks(days):
-    ordered = sorted(days)
     longest = (0, None, None)
     run, start = 0, None
-    for d in ordered:
+    for d in sorted(days):
         if days[d] > 0:
             if run == 0:
                 start = d
@@ -78,6 +101,7 @@ def streaks(days):
                 longest = (run, start, d)
         else:
             run = 0
+
     today = datetime.now(timezone.utc).date()  # GitHub counts days in UTC
     cursor = today if days.get(today, 0) > 0 else today - timedelta(days=1)
     end, cur = cursor, 0
@@ -89,15 +113,18 @@ def streaks(days):
 
 
 def rank(commits, prs, issues, reviews, stars, followers):
-    """Same idea as github-readme-stats: weighted percentile -> letter."""
+    """Weighted score modelled on github-readme-stats -> letter grade."""
     exp = lambda x: 1 - 2 ** -x
     logn = lambda x: x / (1 + x)
-    total_w = 12
     score = (
-        2 * exp(commits / 250) + 3 * exp(prs / 50) + 1 * exp(issues / 25)
-        + 1 * exp(reviews / 2) + 4 * logn(stars / 50) + 1 * logn(followers / 10)
+        2 * exp(commits / 250)
+        + 3 * exp(prs / 50)
+        + 1 * exp(issues / 25)
+        + 1 * exp(reviews / 2)
+        + 4 * logn(stars / 50)
+        + 1 * logn(followers / 10)
     )
-    pct = (1 - score / total_w) * 100
+    pct = (1 - score / 12) * 100
     for letter, limit in [("S", 1), ("A+", 12.5), ("A", 25), ("B+", 37.5), ("B", 62.5)]:
         if pct <= limit:
             return letter, pct
@@ -135,11 +162,13 @@ def streak_svg(total, cur, longest, first_day):
             f'<text x="{x}" y="115" text-anchor="middle" fill="{color}" font-size="14">{label}</text>'
             f'<text x="{x}" y="138" text-anchor="middle" fill="#787c99" font-size="11">{sub}</text>'
         )
+
+    cur_sub = f"{fmt(cur[1])} - {fmt(cur[2])}" if cur[0] else "Contribute today!"
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="495" height="170" viewBox="0 0 495 170" font-family="Segoe UI, Ubuntu, sans-serif">
 <rect width="495" height="170" rx="6" fill="#1a1b27" stroke="#6c5ce7" stroke-width="1.5"/>
 {col(82, total, "Total Contributions", f"{fmt(first_day)} - Present", "#7aa2f7")}
 <line x1="165" y1="45" x2="165" y2="130" stroke="#2a2b3d"/>
-{col(247, cur[0], "Current Streak", f"{fmt(cur[1])} - {fmt(cur[2])}" if cur[0] else "Contribute today!", "#6c5ce7")}
+{col(247, cur[0], "Current Streak", cur_sub, "#6c5ce7")}
 <line x1="330" y1="45" x2="330" y2="130" stroke="#2a2b3d"/>
 {col(412, longest[0], "Longest Streak", f"{fmt(longest[1])} - {fmt(longest[2])}", "#7aa2f7")}
 </svg>"""
@@ -155,7 +184,8 @@ def main():
 
     stars = sum(n["stargazerCount"] for n in u["repositories"]["nodes"])
     commits = cc["totalCommitContributions"]
-    prs, issues = u["pullRequests"]["totalCount"], u["issues"]["totalCount"]
+    prs = u["pullRequests"]["totalCount"]
+    issues = u["issues"]["totalCount"]
     reviews = cc["totalPullRequestReviewContributions"]
     followers = u["followers"]["totalCount"]
     letter, pct = rank(commits, prs, issues, reviews, stars, followers)
@@ -170,7 +200,10 @@ def main():
     OUT.mkdir(exist_ok=True)
     (OUT / "stats.svg").write_text(stats_svg("Toka Nani", rows, letter, pct), encoding="utf-8")
     (OUT / "streak.svg").write_text(streak_svg(total, cur, longest, first_day), encoding="utf-8")
-    print(f"stars={stars} commits={commits} rank={letter} current={cur[0]} longest={longest[0]} total={total}")
+    print(
+        f"OK stars={stars} commits={commits} rank={letter} "
+        f"current={cur[0]} longest={longest[0]} total={total}"
+    )
 
 
 if __name__ == "__main__":
