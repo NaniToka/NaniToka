@@ -43,9 +43,6 @@ I build **production-deployed AI products on Google Cloud**: not notebooks, live
 
 </div>
 
-<!--STATS:START-->
-<!--STATS:END-->
-
 ---
 
 ## 🚀 Featured projects
@@ -162,17 +159,20 @@ flowchart LR
 | PromptWars Virtual, Challenge 1 | Google for Developers | [Verify](https://certificate.hack2skill.com/verify/2026H2S04PWVCHL1-A00285) |
 | Build with AI Bootcamp, Chennai | Google for Developers | [Verify](https://certificate.hack2skill.com/verify/2026H2S08BWAICHN-P00569) |
 | Google Solution Challenge 2026 | Google × Hack2Skill | [Verify](https://certificate.hack2skill.com/verify/2026H2S07SCBWAI-PS06834) |
-| AWS Solutions Architect – Associate | AWS | *In progress* |
+| AWS Solutions Architect – Associate | AWS | [Verify](https://www.credly.com/badges/24807f2f-d801-4f20-9c7e-ab40c2fa6b35/linked_in_profile) |
 
 </details>
 
 ---
 
-## 📈 Top languages
+## 📈 GitHub activity
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=NaniToka&layout=compact&theme=tokyonight&hide_border=true&title_color=6c5ce7&cache_seconds=21600" alt="Top languages" />
+<img height="190" src="https://raw.githubusercontent.com/NaniToka/NaniToka/main/assets/stats.svg" alt="GitHub stats" />
+<img height="190" src="https://github-readme-stats.vercel.app/api/top-langs/?username=NaniToka&layout=compact&theme=tokyonight&hide_border=true&title_color=6c5ce7&cache_seconds=21600" alt="Top languages" />
+
+<img src="https://raw.githubusercontent.com/NaniToka/NaniToka/main/assets/streak.svg" alt="GitHub streak" />
 
 </div>
 
