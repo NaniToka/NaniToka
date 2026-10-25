@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="215" viewBox="0 0 495 215" font-family="Segoe UI, Ubuntu, sans-serif">
+<rect width="495" height="215" rx="6" fill="#1a1b27" stroke="#6c5ce7" stroke-width="1.5"/>
+<text x="30" y="40" fill="#6c5ce7" font-size="19" font-weight="700">Toka Nani's GitHub Stats</text>
+<text x="30" y="80" fill="#a9b1d6" font-size="14">Total Stars Earned:</text><text x="230" y="80" fill="#7aa2f7" font-size="14" font-weight="700">132</text><text x="30" y="105" fill="#a9b1d6" font-size="14">Total Commits (last year):</text><text x="230" y="105" fill="#7aa2f7" font-size="14" font-weight="700">469</text><text x="30" y="130" fill="#a9b1d6" font-size="14">Total PRs:</text><text x="230" y="130" fill="#7aa2f7" font-size="14" font-weight="700">8</text><text x="30" y="155" fill="#a9b1d6" font-size="14">Total Issues:</text><text x="230" y="155" fill="#7aa2f7" font-size="14" font-weight="700">2</text><text x="30" y="180" fill="#a9b1d6" font-size="14">Followers:</text><text x="230" y="180" fill="#7aa2f7" font-size="14" font-weight="700">3</text>
+<g transform="translate(400,115)">
+<circle r="40" fill="none" stroke="#2a2b3d" stroke-width="7"/>
+<circle r="40" fill="none" stroke="#6c5ce7" stroke-width="7" stroke-linecap="round" stroke-dasharray="251.3" stroke-dashoffset="109.9" transform="rotate(-90)"/>
+<text y="9" text-anchor="middle" fill="#a9b1d6" font-size="26" font-weight="700">B</text>
+</g>
+</svg>
