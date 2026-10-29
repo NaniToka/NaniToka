@@ -120,3 +120,76 @@ flowchart LR
     E --> G[Compliance report<br/>SDG-5 · SDG-10]
     style D fill:#6c5ce7,color:#fff
     style E fill:#0984e3,color:#fff
+
+```
+
+---
+
+## 🛠️ Tech stack
+
+<div align="center">
+
+<img src="https://skillicons.dev/icons?i=ts,js,py,react,vite,tailwind,nodejs,fastapi,flask,sqlite,docker,gcp,firebase,git,vscode&perline=15" alt="Tech stack icons" />
+
+</div>
+
+**AI/ML:** Gemini API · Vertex AI · embeddings · prompt engineering · fairness metrics  
+**Cloud/DevOps:** Cloud Run · Docker · Render · Cloud Storage · Firestore · GitHub Actions  
+**Data:** Python · Pandas · SQL · SQLAlchemy · Streamlit
+
+---
+
+## 💼 Experience & recognition
+
+- 🌟 **Google Gemini Student Ambassador**, Google India · May 2026 – present · AI workshops and developer sessions on campus
+- 🧪 **Data Analyst Intern**, Bluestock Fintech · Sep–Oct 2026 · end-to-end mutual-fund analytics pipeline with live AMFI NAV integration
+- 🏆 **Google Solution Challenge 2026**: BiasGuard AI (solo)
+- 🏆 **PromptWars Virtual**: Challenge 3, **Top 400**
+- 🏆 **Anvil @ Ascent 2026** (Scaler School of Technology): Grand Finale qualifier
+- 💼 **Forage simulations:** JPMorgan (Software Engineering) · Walmart Global Tech (Advanced SWE) · Tata iQ (GenAI Analytics)
+
+<details>
+<summary><b>Certifications</b></summary>
+
+| Certification | Issuer | Verify |
+|---|---|---|
+| Google AI Essentials | Google / Coursera | [Verify](https://www.coursera.org/account/accomplishments/specialization/HAXF8PBC6D2I) |
+| Claude Code in Action | Anthropic | [Verify](https://verify.skilljar.com/c/e8sdwwdwxw78) |
+| Amrita Agentic Leap 2026 | Amrita Vishwa Vidyapeetham | [Verify](https://certificate.amritauniversity.in/verify/359876) |
+| Google Cloud Gen AI Academy APAC, Cohort 3 | Google Cloud × Hack2skill | [Verify](https://certificate.hack2skill.com/verify/2026H2S09GCGENAIAPACC3-P00601) |
+| PromptWars Virtual, Challenge 1 | Google for Developers | [Verify](https://certificate.hack2skill.com/verify/2026H2S04PWVCHL1-A00285) |
+| Build with AI Bootcamp, Chennai | Google for Developers | [Verify](https://certificate.hack2skill.com/verify/2026H2S08BWAICHN-P00569) |
+| Google Solution Challenge 2026 | Google × Hack2Skill | [Verify](https://certificate.hack2skill.com/verify/2026H2S07SCBWAI-PS06834) |
+| AWS Solutions Architect – Associate | AWS | [Verify](https://www.credly.com/badges/24807f2f-d801-4f20-9c7e-ab40c2fa6b35/linked_in_profile) |
+
+</details>
+
+---
+
+## 📈 GitHub activity
+
+<div align="center">
+
+<img height="190" src="https://raw.githubusercontent.com/NaniToka/NaniToka/main/assets/stats.svg" alt="GitHub stats" />
+<img height="190" src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=NaniToka&theme=tokyonight" alt="Top languages" />
+
+<img src="https://streak-stats.demolab.com?user=NaniToka&theme=tokyonight&hide_border=true" alt="GitHub streak" />
+
+</div>
+
+---
+
+<div align="center">
+
+### 📬 Let's build something
+
+**Open to SWE / Cloud / DevOps internships.** I reply fast.
+
+<a href="mailto:tokananiy@gmail.com"><img height="46" src="https://img.shields.io/badge/EMAIL-tokananiy%40gmail.com-6c5ce7?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
+<a href="https://linkedin.com/in/toka-nani-33a124359"><img height="46" src="https://img.shields.io/badge/LINKEDIN-Connect-0984e3?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
+<a href="https://toka-portfolio-2.onrender.com/"><img height="46" src="https://img.shields.io/badge/PORTFOLIO-View_Live-00b894?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
+<a href="https://toka-portfolio-2.onrender.com/nani.pdf"><img height="46" src="https://img.shields.io/badge/RESUME-Download_PDF-e17055?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Resume" /></a>
+
+<img src="https://raw.githubusercontent.com/NaniToka/NaniToka/main/footer.svg" alt="footer" width="100%" />
+
+</div>
