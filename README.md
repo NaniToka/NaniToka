@@ -1,194 +1,168 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/NaniToka/NaniToka/main/banner.svg?v=3" alt="Toka Nani, Cloud and GenAI Engineer" width="100%" />
+<img src="./banner.svg" alt="Toka Nani — Applied AI and Cloud Engineer. Four deployed AI products, approximately 74 percent less prompt-token overhead, 37 passing tests, and 13+ hackathons." width="100%" />
 
-<a href="https://github.com/NaniToka">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=20&pause=1200&color=6C5CE7&center=true&vCenter=true&width=760&lines=Building+LLM+cost-optimization+tooling;Shipping+ML+fairness+auditors+on+Google+Cloud;Google+Gemini+Student+Ambassador+%7C+B.Tech+CSE+%2728;Open+to+SWE+%2F+Cloud+%2F+DevOps+internships" alt="Typing SVG" />
-</a>
+<br />
 
-<br/>
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-EXPLORE-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white)](https://toka-portfolio-2.onrender.com) [![Resume](https://img.shields.io/badge/RESUME-VIEW_PDF-0891B2?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://toka-portfolio-2.onrender.com/nani.pdf) [![LinkedIn](https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/toka-nani-33a124359) [![Email](https://img.shields.io/badge/EMAIL-LET'S_TALK-16A34A?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tokananiy@gmail.com)
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-Live-6c5ce7?style=for-the-badge&logo=googlechrome&logoColor=white)](https://toka-portfolio-2.onrender.com)
-[![Resume](https://img.shields.io/badge/Resume-PDF-e17055?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://toka-portfolio-2.onrender.com/nani.pdf)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/toka-nani-33a124359)
-[![Email](https://img.shields.io/badge/Email-Hire_me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tokananiy@gmail.com)
-
-<img src="https://komarev.com/ghpvc/?username=NaniToka&label=Profile+views&color=6c5ce7&style=flat-square" alt="Profile views" />
+**[Selected work](#selected-work) · [Experience](#experience--recognition) · [Technical toolkit](#technical-toolkit) · [Contact](#lets-build-something-useful)**
 
 </div>
 
----
+## AI that ships. Cloud that scales. Results you can measure.
 
-## 👋 About
+I’m **Toka Nani**, an Applied AI and Cloud Engineer who takes products from idea to deployment—not just to a notebook. My work spans **LLM cost optimization, responsible AI, and multilingual decision systems**, using Python, FastAPI, React, Docker, and Google Cloud.
 
-I build **production-deployed AI products on Google Cloud**: not notebooks, live URLs. My focus areas are **LLM cost and latency optimization**, **responsible-AI and bias auditing**, and **multilingual civic-tech decision systems**.
+**Google Gemini Student Ambassador · AWS Certified Solutions Architect – Associate · B.Tech CSE ’28**
 
-| | |
-|---|---|
-| 🎓 | B.Tech CSE '28 · DVR & Dr. HS MIC College of Technology |
-| 🌟 | Google Gemini Student Ambassador (2026) |
-| 🧪 | Data Analyst Intern, Bluestock Fintech (Sep–Oct 2026) |
-| 🎯 | Seeking **SWE · Cloud · DevOps internships** · remote or relocation · available immediately |
-| 📍 | Vijayawada, India · IST (UTC+5:30) |
+| Applied AI engineering | Cloud & platform engineering | Product engineering |
+|---|---|---|
+| Gemini, Vertex AI, embeddings, fairness metrics, and evaluation-driven LLM workflows. | Containerized services, Cloud Run, Firestore, Cloud Storage, and CI/CD with GitHub Actions. | React and TypeScript interfaces backed by tested Python APIs and practical data pipelines. |
+
+> **Currently seeking:** Software Engineering, Applied AI, Cloud, and DevOps internships. Open to remote work and relocation. Based in India · UTC+5:30.
 
 ---
 
-## 📊 At a glance
+## Selected work
 
-<div align="center">
+### 01 / TokenFlow AI — making LLM context cheaper
 
-| 🚀 **4** | 🏆 **13+** | ⚡ **~74%** | 🧪 **37** |
-|:---:|:---:|:---:|:---:|
-| Live deployed AI products | Hackathons | Prompt-token reduction (TokenFlow, own benchmark) | Passing tests (CivicPulse scoring engine) |
+**The problem:** Repeated prompt context increases token usage and makes LLM applications more expensive to operate.
 
-</div>
+**What I built:** Middleware that combines Gemini `text-embedding-004` vectors with exponential recency-decay compression before each completion call.
+
+**Measured result:** **~74% less prompt-token overhead** in my own benchmark.
+
+`FastAPI` `Gemini 1.5 Flash` `Embeddings` `React 18` `Render`
+
+[**Live product**](https://tokenflow-ai.onrender.com) · [**API documentation**](https://tokenflow-ai.onrender.com/docs) · [**Source code**](https://github.com/NaniToka/TokenFlow-AI)
 
 ---
 
-## 🚀 Featured projects
+### 02 / BiasGuard AI — making automated decisions auditable
 
-<table>
-<tr>
-<td width="50%" valign="top">
+**The problem:** Hiring and credit-scoring systems can produce inequitable outcomes without a clear, reviewable audit trail.
 
-### 🔍 [BiasGuard AI](https://github.com/NaniToka/unbiased-ai-decision)
-**Forensic bias auditor for hiring and credit-scoring decisions.**
-Streams decision logs through demographic-parity and equalized-odds checks. Gemini 1.5 Flash generates compliance reports mapped to UN SDG-5 and SDG-10 in **under 30 s**. Built solo for Google Solution Challenge 2026.
+**What I built:** A forensic auditing pipeline that streams decision logs through demographic-parity and equalized-odds checks, then uses Gemini to generate compliance reports mapped to UN SDG-5 and SDG-10.
+
+**Measured result:** Compliance reports generated in **under 30 seconds**. Designed and built solo for Google Solution Challenge 2026.
 
 `Vertex AI` `Gemini` `Flask` `Firestore` `Cloud Run` `Docker`
 
-[**▶ Live demo**](https://biasguard-rzpoqg6s6a-uc.a.run.app) · [Code](https://github.com/NaniToka/unbiased-ai-decision)
+`Decision logs → Cloud Storage → Flask on Cloud Run → Fairness evaluation → Gemini report → Firestore audit trail`
 
-</td>
-<td width="50%" valign="top">
+[**Source code & architecture**](https://github.com/NaniToka/unbiased-ai-decision)
 
-### ⚡ [TokenFlow AI](https://github.com/NaniToka/TokenFlow-AI)
-**LLM middleware that cuts prompt cost.**
-Gemini `text-embedding-004` vectors plus exponential recency-decay compression before each completion call, achieving **~74% less prompt-token overhead** (own benchmark).
+---
 
-`FastAPI` `Gemini 1.5 Flash` `React 18` `Render`
+### 03 / CivicPulse AI — turning citizen complaints into ranked action
 
-[**▶ Live demo**](https://tokenflow-ai.onrender.com) · [API docs](https://tokenflow-ai.onrender.com/docs) · [Code](https://github.com/NaniToka/TokenFlow-AI)
+**What I built:** A multilingual civic decision-intelligence platform. Gemini detects language and categorizes complaints; a deterministic four-factor scoring engine ranks demand, infrastructure gaps, vulnerability, and investment overlap.
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
-
-### 🏛️ [CivicPulse AI](https://github.com/NaniToka/civicpulse-ai)
-**Multilingual civic decision-intelligence layer.**
-Gemini detects the language and categorizes citizen complaints. A deterministic 4-factor scoring engine (demand 35 · infra gap 25 · vulnerability 20 · investment overlap 20) ranks priorities. **37 pytest tests.**
+**Engineering proof:** **37 passing pytest tests** for the scoring engine.
 
 `FastAPI` `React` `TypeScript` `Vite` `Gemini`
 
-[**▶ Live demo**](https://civicpulse-ai-frontend.onrender.com/) · [Code](https://github.com/NaniToka/civicpulse-ai)
+[**Live product**](https://civicpulse-ai-frontend.onrender.com/) · [**Source code**](https://github.com/NaniToka/civicpulse-ai)
 
-</td>
-<td width="50%" valign="top">
+---
 
-### 🗳️ [VoteWise AI](https://votewise-ai-auoj3wixvq-uc.a.run.app)
-**Nonpartisan voter-readiness assistant for first-time voters.**
-Deterministic decision-tree engine plus Gemini-powered Q&A, containerized on Cloud Run. Built for PromptWars.
+### 04 / VoteWise AI — helping first-time voters prepare
+
+**What I built:** A nonpartisan voter-readiness assistant combining a deterministic decision-tree engine with Gemini-powered Q&A, containerized and deployed on Cloud Run for PromptWars.
 
 `React` `TypeScript` `Gemini` `Docker` `Cloud Run`
 
-[**▶ Live demo**](https://votewise-ai-auoj3wixvq-uc.a.run.app)
-
-</td>
-</tr>
-</table>
+[**Source code**](https://github.com/NaniToka/votewise-ai)
 
 <details>
-<summary><b>More projects</b></summary>
+<summary><strong>More engineering work</strong></summary>
+<br />
 
-- 📈 **Mutual Fund Analytics Platform**: 9-table SQLite star schema (86,000+ rows), with CAGR / Sharpe / Sortino / Alpha-Beta / VaR / CVaR in a 4-page Streamlit dashboard *(Bluestock capstone)*
-- 🏛️ **JanVoice AI**: role-based grievance portals for citizens, MPs and admins, with Gemini daily constituency briefings · [Live](https://spontaneous-raindrop-8a7198.netlify.app/dashboard)
+- **Mutual Fund Analytics Platform — Bluestock capstone:** Nine-table SQLite star schema with 86,000+ rows; CAGR, Sharpe, Sortino, Alpha-Beta, VaR, and CVaR analytics in a four-page Streamlit dashboard. [**Source code**](https://github.com/NaniToka/bluestock-mf-capstone)
+- **JanVoice AI:** Role-based grievance portals for citizens, MPs, and administrators, with Gemini-generated daily constituency briefings. [**Live product**](https://spontaneous-raindrop-8a7198.netlify.app/dashboard)
 
 </details>
 
 ---
 
-## 🏗️ How BiasGuard works
+## Experience & recognition
 
-```mermaid
-flowchart LR
-    A[Decision logs<br/>hiring / credit] --> B[Cloud Storage]
-    B --> C[Cloud Run · Flask API]
-    C --> D{Fairness evaluator<br/>Demographic parity<br/>Equalized odds}
-    D --> E[Gemini 1.5 Flash<br/>report generation]
-    E --> F[(Firestore<br/>audit trail)]
-    E --> G[Compliance report<br/>SDG-5 · SDG-10]
-    style D fill:#6c5ce7,color:#fff
-    style E fill:#0984e3,color:#fff
-```
-
----
-
-## 🛠️ Tech stack
-
-<div align="center">
-
-<img src="https://skillicons.dev/icons?i=ts,js,py,react,vite,tailwind,nodejs,fastapi,flask,sqlite,docker,gcp,firebase,git,vscode&perline=15" alt="Tech stack icons" />
-
-</div>
-
-**AI/ML:** Gemini API · Vertex AI · embeddings · prompt engineering · fairness metrics  
-**Cloud/DevOps:** Cloud Run · Docker · Render · Cloud Storage · Firestore · GitHub Actions  
-**Data:** Python · Pandas · SQL · SQLAlchemy · Streamlit
-
----
-
-## 💼 Experience & recognition
-
-- 🌟 **Google Gemini Student Ambassador**, Google India · May 2026 – present · AI workshops and developer sessions on campus
-- 🧪 **Data Analyst Intern**, Bluestock Fintech · Sep–Oct 2026 · end-to-end mutual-fund analytics pipeline with live AMFI NAV integration
-- 🏆 **Google Solution Challenge 2026**: BiasGuard AI (solo)
-- 🏆 **PromptWars Virtual**: Challenge 3, **Top 400**
-- 🏆 **Anvil @ Ascent 2026** (Scaler School of Technology): Grand Finale qualifier
-- 💼 **Forage simulations:** JPMorgan (Software Engineering) · Walmart Global Tech (Advanced SWE) · Tata iQ (GenAI Analytics)
-
-<details>
-<summary><b>Certifications</b></summary>
-
-| Certification | Issuer | Verify |
+| Timeline | Role or milestone | What it demonstrates |
 |---|---|---|
-| Google AI Essentials | Google / Coursera | [Verify](https://www.coursera.org/account/accomplishments/specialization/HAXF8PBC6D2I) |
-| Claude Code in Action | Anthropic | [Verify](https://verify.skilljar.com/c/e8sdwwdwxw78) |
-| Amrita Agentic Leap 2026 | Amrita Vishwa Vidyapeetham | [Verify](https://certificate.amritauniversity.in/verify/359876) |
-| Google Cloud Gen AI Academy APAC, Cohort 3 | Google Cloud × Hack2skill | [Verify](https://certificate.hack2skill.com/verify/2026H2S09GCGENAIAPACC3-P00601) |
-| PromptWars Virtual, Challenge 1 | Google for Developers | [Verify](https://certificate.hack2skill.com/verify/2026H2S04PWVCHL1-A00285) |
-| Build with AI Bootcamp, Chennai | Google for Developers | [Verify](https://certificate.hack2skill.com/verify/2026H2S08BWAICHN-P00569) |
-| Google Solution Challenge 2026 | Google × Hack2Skill | [Verify](https://certificate.hack2skill.com/verify/2026H2S07SCBWAI-PS06834) |
-| AWS Solutions Architect – Associate | AWS | [Verify](https://www.credly.com/badges/24807f2f-d801-4f20-9c7e-ab40c2fa6b35/linked_in_profile) |
+| **May 2026 — Present** | **Google Gemini Student Ambassador**, Google India | Leading AI workshops and developer sessions; communicating technical concepts to campus communities. |
+| **Sep — Oct 2026** | **Data Analyst Intern**, Bluestock Fintech | Built an end-to-end mutual-fund analytics pipeline with live AMFI NAV integration. |
+| **2026** | **Google Solution Challenge** | Designed and shipped BiasGuard AI as a solo builder. |
+| **2026** | **PromptWars Virtual, Challenge 3** | Placed in the **Top 400**. |
+| **2026** | **Anvil @ Ascent**, Scaler School of Technology | **Grand Finale qualifier**. |
+
+**Professional simulations:** JPMorgan Software Engineering · Walmart Global Tech Advanced SWE · Tata iQ GenAI Analytics.
+
+<details>
+<summary><strong>Certifications & credentials</strong></summary>
+<br />
+
+| Certification | Issuer | Verification |
+|---|---|---|
+| AWS Solutions Architect – Associate | AWS | [Verify credential](https://www.credly.com/badges/24807f2f-d801-4f20-9c7e-ab40c2fa6b35/linked_in_profile) |
+| Google AI Essentials | Google / Coursera | [Verify credential](https://www.coursera.org/account/accomplishments/specialization/HAXF8PBC6D2I) |
+| Claude Code in Action | Anthropic | [Verify credential](https://verify.skilljar.com/c/e8sdwwdwxw78) |
+| Google Cloud Gen AI Academy APAC, Cohort 3 | Google Cloud × Hack2skill | [Verify credential](https://certificate.hack2skill.com/verify/2026H2S09GCGENAIAPACC3-P00601) |
+| Amrita Agentic Leap 2026 | Amrita Vishwa Vidyapeetham | [Verify credential](https://certificate.amritauniversity.in/verify/359876) |
+| Build with AI Bootcamp, Chennai | Google for Developers | [Verify credential](https://certificate.hack2skill.com/verify/2026H2S08BWAICHN-P00569) |
+| Google Solution Challenge 2026 | Google × Hack2skill | [Verify credential](https://certificate.hack2skill.com/verify/2026H2S07SCBWAI-PS06834) |
+| PromptWars Virtual, Challenge 1 | Google for Developers | [Verify credential](https://certificate.hack2skill.com/verify/2026H2S04PWVCHL1-A00285) |
 
 </details>
 
 ---
 
-## 📈 GitHub activity
+## Technical toolkit
 
+| Capability | Tools |
+|---|---|
+| **AI & ML** | Gemini API · Vertex AI · embeddings · prompt engineering · fairness metrics |
+| **Languages** | Python · TypeScript · JavaScript · SQL |
+| **Backend & data** | FastAPI · Flask · Node.js · Pandas · SQLAlchemy · SQLite · Streamlit |
+| **Frontend** | React · Vite · Tailwind CSS |
+| **Cloud & DevOps** | Google Cloud Run · Cloud Storage · Firestore · Docker · Render · GitHub Actions · Git |
+
+### How I approach engineering
+
+1. **Start with the decision or user outcome**, not the model.
+2. **Keep critical logic deterministic and tested**; use AI where it adds clear value.
+3. **Deploy early and instrument the result**—cost, latency, quality, or fairness.
+4. **Make the system understandable** through documentation, audit trails, and usable interfaces.
+
+<details>
+<summary><strong>GitHub activity</strong></summary>
+<br />
 <div align="center">
-
-<img height="190" src="https://raw.githubusercontent.com/NaniToka/NaniToka/main/assets/stats.svg" alt="GitHub stats" />
-<img height="190" src="https://github-readme-stats.vercel.app/api/top-langs/?username=NaniToka&layout=compact&theme=tokyonight&hide_border=true&title_color=6c5ce7&cache_seconds=21600" alt="Top languages" />
-
-<img src="https://raw.githubusercontent.com/NaniToka/NaniToka/main/assets/streak.svg" alt="GitHub streak" />
-
+  <img src="./assets/streak.svg" alt="Rolling 12-month GitHub contributions, current streak, and longest streak" width="100%" />
+  <br /><br />
+  <img src="./assets/languages.svg" alt="Top programming languages by code bytes across owned public repositories" width="100%" />
+  <br /><br />
+  <img src="./assets/stats.svg" alt="Public GitHub repositories, stars received, and authored pull requests" width="100%" />
 </div>
+</details>
 
 ---
 
 <div align="center">
 
-### 📬 Let's build something
+## Let’s build something useful
 
-**Open to SWE / Cloud / DevOps internships.** I reply fast.
+**Have a challenging problem in AI, cloud, data, or developer tooling? I’d love to hear about it.**
 
-<a href="mailto:tokananiy@gmail.com"><img height="46" src="https://img.shields.io/badge/EMAIL-tokananiy%40gmail.com-6c5ce7?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
-<a href="https://linkedin.com/in/toka-nani-33a124359"><img height="46" src="https://img.shields.io/badge/LINKEDIN-Connect-0984e3?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-<a href="https://toka-portfolio-2.onrender.com/"><img height="46" src="https://img.shields.io/badge/PORTFOLIO-View_Live-00b894?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
-<a href="https://toka-portfolio-2.onrender.com/nani.pdf"><img height="46" src="https://img.shields.io/badge/RESUME-Download_PDF-e17055?style=for-the-badge&logo=adobeacrobatreader&logoColor=white" alt="Resume" /></a>
+Open to immediate internship opportunities · Remote or relocation · Vijayawada, India
 
-<img src="https://raw.githubusercontent.com/NaniToka/NaniToka/main/footer.svg" alt="footer" width="100%" />
+<br />
+
+[![Email Toka Nani](https://img.shields.io/badge/EMAIL-tokananiy@gmail.com-7C3AED?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tokananiy@gmail.com) [![Connect on LinkedIn](https://img.shields.io/badge/LINKEDIN-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/toka-nani-33a124359) [![View portfolio](https://img.shields.io/badge/PORTFOLIO-Explore-0891B2?style=for-the-badge&logo=googlechrome&logoColor=white)](https://toka-portfolio-2.onrender.com/) [![View resume](https://img.shields.io/badge/RESUME-View_PDF-16A34A?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://toka-portfolio-2.onrender.com/nani.pdf)
+
+<br />
+
+<img src="./footer.svg" alt="Design. Build. Deploy. Measure." width="100%" />
 
 </div>

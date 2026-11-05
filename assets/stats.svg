@@ -1,10 +1,28 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="495" height="215" viewBox="0 0 495 215" font-family="Segoe UI, Ubuntu, sans-serif">
-<rect width="495" height="215" rx="6" fill="#1a1b27" stroke="#6c5ce7" stroke-width="1.5"/>
-<text x="30" y="40" fill="#6c5ce7" font-size="19" font-weight="700">Toka Nani's GitHub Stats</text>
-<text x="30" y="80" fill="#a9b1d6" font-size="14">Total Stars Earned:</text><text x="230" y="80" fill="#7aa2f7" font-size="14" font-weight="700">132</text><text x="30" y="105" fill="#a9b1d6" font-size="14">Total Commits (last year):</text><text x="230" y="105" fill="#7aa2f7" font-size="14" font-weight="700">486</text><text x="30" y="130" fill="#a9b1d6" font-size="14">Total PRs:</text><text x="230" y="130" fill="#7aa2f7" font-size="14" font-weight="700">8</text><text x="30" y="155" fill="#a9b1d6" font-size="14">Total Issues:</text><text x="230" y="155" fill="#7aa2f7" font-size="14" font-weight="700">2</text><text x="30" y="180" fill="#a9b1d6" font-size="14">Followers:</text><text x="230" y="180" fill="#7aa2f7" font-size="14" font-weight="700">2</text>
-<g transform="translate(400,115)">
-<circle r="40" fill="none" stroke="#2a2b3d" stroke-width="7"/>
-<circle r="40" fill="none" stroke="#6c5ce7" stroke-width="7" stroke-linecap="round" stroke-dasharray="251.3" stroke-dashoffset="109.1" transform="rotate(-90)"/>
-<text y="9" text-anchor="middle" fill="#a9b1d6" font-size="26" font-weight="700">B</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="200" viewBox="0 0 960 200" role="img" aria-label="PUBLIC GITHUB. VERIFIED NOV 04, 2026">
+<rect width="960" height="200" rx="18" fill="#0B1120" stroke="#2B3548"/>
+<rect x="1" y="1" width="958" height="3" rx="1.5" fill="url(#accent)"/>
+<defs><linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#A78BFA"/><stop offset="0.34" stop-color="#F472B6"/><stop offset="0.67" stop-color="#FBBF24"/><stop offset="1" stop-color="#A3E635"/></linearGradient></defs>
+<g font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif">
+<text x="28" y="35" fill="#E2E8F0" font-size="14" font-weight="700" letter-spacing="1.7">PUBLIC GITHUB</text>
+<text x="932" y="35" text-anchor="end" fill="#94A3B8" font-size="11" letter-spacing="0.8">VERIFIED NOV 04, 2026</text>
+<g>
+<rect x="28" y="58" width="290" height="120" rx="13" fill="#111A2C" stroke="#2B3548"/>
+<rect x="28" y="58" width="4" height="120" rx="2" fill="#A78BFA"/>
+<text x="50" y="110" fill="#A78BFA" font-size="38" font-weight="800" letter-spacing="-1">30</text>
+<text x="50" y="138" fill="#E2E8F0" font-size="11" font-weight="700" letter-spacing="0.8">PUBLIC REPOSITORIES</text>
+<text x="50" y="158" fill="#94A3B8" font-size="11">Across this GitHub account</text>
+</g><g>
+<rect x="335" y="58" width="290" height="120" rx="13" fill="#111A2C" stroke="#2B3548"/>
+<rect x="335" y="58" width="4" height="120" rx="2" fill="#FBBF24"/>
+<text x="357" y="110" fill="#FBBF24" font-size="38" font-weight="800" letter-spacing="-1">132</text>
+<text x="357" y="138" fill="#E2E8F0" font-size="11" font-weight="700" letter-spacing="0.8">STARS RECEIVED</text>
+<text x="357" y="158" fill="#94A3B8" font-size="11">Owned public, non-fork repositories</text>
+</g><g>
+<rect x="642" y="58" width="290" height="120" rx="13" fill="#111A2C" stroke="#2B3548"/>
+<rect x="642" y="58" width="4" height="120" rx="2" fill="#F472B6"/>
+<text x="664" y="110" fill="#F472B6" font-size="38" font-weight="800" letter-spacing="-1">8</text>
+<text x="664" y="138" fill="#E2E8F0" font-size="11" font-weight="700" letter-spacing="0.8">PUBLIC PULL REQUESTS</text>
+<text x="664" y="158" fill="#94A3B8" font-size="11">Authored across GitHub</text>
+</g>
 </g>
 </svg>

@@ -1,208 +1,223 @@
 #!/usr/bin/env python3
-"""Fetch GitHub data via GraphQL and render stats + streak SVG cards."""
+"""Generate profile cards from GitHub's public API and contribution calendar."""
+
+import html
 import json
 import os
-import sys
-import urllib.error
-import urllib.request
+import re
+import subprocess
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
 USER = "NaniToka"
-OUT = Path("assets")
-
-TOKENS = [t for t in (os.environ.get("STATS_TOKEN"), os.environ.get("GITHUB_TOKEN")) if t]
-if not TOKENS:
-    sys.exit("No token available: neither STATS_TOKEN nor GITHUB_TOKEN is set")
-_active = {"i": 0}
-
-PROFILE_Q = """
-query($login: String!) {
-  user(login: $login) {
-    followers { totalCount }
-    pullRequests { totalCount }
-    issues { totalCount }
-    repositories(ownerAffiliations: OWNER, isFork: false, first: 100) {
-      nodes { stargazerCount }
-    }
-    contributionsCollection {
-      contributionYears
-      totalCommitContributions
-      totalPullRequestReviewContributions
-    }
-  }
-}
-"""
-
-YEAR_Q = """
-query($login: String!, $from: DateTime!, $to: DateTime!) {
-  user(login: $login) {
-    contributionsCollection(from: $from, to: $to) {
-      contributionCalendar {
-        weeks { contributionDays { date contributionCount } }
-      }
-    }
-  }
-}
-"""
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / "assets"
+TODAY = datetime.now(timezone.utc).date()
+TOKENS = list(dict.fromkeys(t for t in (os.environ.get("STATS_TOKEN"), os.environ.get("GITHUB_TOKEN")) if t))
+PALETTE = ["#A78BFA", "#A3E635", "#FBBF24", "#F472B6", "#2DD4BF", "#FB7185"]
+BG = "#0B1120"
+CARD = "#111A2C"
+BORDER = "#2B3548"
+TEXT = "#E2E8F0"
+MUTED = "#94A3B8"
+DAY_PATTERN = re.compile(
+    r'<td\b[^>]*data-date="(?P<day>\d{4}-\d{2}-\d{2})"[^>]*data-level="(?P<level>\d)"[^>]*>\s*</td>'
+    r'\s*<tool-tip\b[^>]*>(?P<label>[^<]+)</tool-tip>',
+    re.S,
+)
 
 
-def gql(query, variables):
-    """Run a GraphQL query; on 401 retry with the next available token."""
-    while True:
-        token = TOKENS[_active["i"]]
-        req = urllib.request.Request(
-            "https://api.github.com/graphql",
-            data=json.dumps({"query": query, "variables": variables}).encode(),
-            headers={
-                "Authorization": f"bearer {token}",
-                "Content-Type": "application/json",
-                "User-Agent": "profile-stats-script",
-            },
-        )
-        try:
-            with urllib.request.urlopen(req, timeout=60) as r:
-                data = json.load(r)
-        except urllib.error.HTTPError as e:
-            body = e.read().decode(errors="replace")
-            if e.code == 401 and _active["i"] + 1 < len(TOKENS):
-                print("Token rejected (401), falling back to the default token")
-                _active["i"] += 1
-                continue
-            sys.exit(f"HTTP {e.code} from GitHub: {body}")
-        if data.get("errors"):
-            sys.exit(f"GraphQL error: {data['errors']}")
-        return data["data"]["user"]
+def fetch(url, api=False):
+    attempts = TOKENS + [None] if api else [None]
+    errors = []
+    for token in attempts:
+        command = [
+            "curl", "-L", "-sS", "--fail", "--max-time", "45",
+            "-H", "User-Agent: NaniToka-profile-stats", url,
+        ]
+        if api:
+            command[1:1] = ["-H", "Accept: application/vnd.github+json"]
+        if token:
+            command[1:1] = ["-H", f"Authorization: Bearer {token}"]
+        result = subprocess.run(command, capture_output=True, text=True)
+        if result.returncode == 0:
+            return result.stdout
+        errors.append(result.stderr.strip())
+    raise RuntimeError(f"Unable to fetch {url}: {'; '.join(errors)}")
 
 
-def all_days(years):
+def fetch_json(url):
+    return json.loads(fetch(url, api=True))
+
+
+def contribution_data():
+    source = fetch(f"https://github.com/users/{USER}/contributions")
+    plain = html.unescape(re.sub(r"<[^>]+>", " ", source))
+    plain = re.sub(r"\s+", " ", plain)
+    total_match = re.search(r"([\d,]+) contributions in the last year", plain)
+    if not total_match:
+        raise RuntimeError("GitHub contribution total was not found")
+    total = int(total_match.group(1).replace(",", ""))
+
     days = {}
-    for y in years:
-        u = gql(
-            YEAR_Q,
-            {"login": USER, "from": f"{y}-01-01T00:00:00Z", "to": f"{y}-12-31T23:59:59Z"},
+    for match in DAY_PATTERN.finditer(source):
+        day = datetime.strptime(match.group("day"), "%Y-%m-%d").date()
+        if day > TODAY:
+            continue
+        label = match.group("label")
+        if label.startswith("No contributions"):
+            count = 0
+        else:
+            count_match = re.match(r"([\d,]+) contributions? on", label)
+            if not count_match:
+                raise RuntimeError(f"Unexpected contribution label: {label}")
+            count = int(count_match.group(1).replace(",", ""))
+        days[day] = count
+
+    if not days or sum(days.values()) != total:
+        raise RuntimeError(
+            f"Contribution calendar mismatch: header={total}, days={sum(days.values())}"
         )
-        weeks = u["contributionsCollection"]["contributionCalendar"]["weeks"]
-        for w in weeks:
-            for d in w["contributionDays"]:
-                days[datetime.strptime(d["date"], "%Y-%m-%d").date()] = d["contributionCount"]
-    return days
+    return total, days
 
 
 def streaks(days):
     longest = (0, None, None)
-    run, start = 0, None
-    for d in sorted(days):
-        if days[d] > 0:
+    run = 0
+    start = None
+    for day in sorted(days):
+        if days[day] > 0:
             if run == 0:
-                start = d
+                start = day
             run += 1
             if run > longest[0]:
-                longest = (run, start, d)
+                longest = (run, start, day)
         else:
             run = 0
 
-    today = datetime.now(timezone.utc).date()  # GitHub counts days in UTC
-    cursor = today if days.get(today, 0) > 0 else today - timedelta(days=1)
-    end, cur = cursor, 0
+    cursor = TODAY if days.get(TODAY, 0) > 0 else TODAY - timedelta(days=1)
+    end = cursor
+    current = 0
     while days.get(cursor, 0) > 0:
-        cur += 1
+        current += 1
         cursor -= timedelta(days=1)
-    cur_start = end - timedelta(days=cur - 1) if cur else None
-    return (cur, cur_start, end if cur else None), longest
+    current_start = end - timedelta(days=current - 1) if current else None
+    return (current, current_start, end if current else None), longest
 
 
-def rank(commits, prs, issues, reviews, stars, followers):
-    """Weighted score modelled on github-readme-stats -> letter grade."""
-    exp = lambda x: 1 - 2 ** -x
-    logn = lambda x: x / (1 + x)
-    score = (
-        2 * exp(commits / 250)
-        + 3 * exp(prs / 50)
-        + 1 * exp(issues / 25)
-        + 1 * exp(reviews / 2)
-        + 4 * logn(stars / 50)
-        + 1 * logn(followers / 10)
-    )
-    pct = (1 - score / 12) * 100
-    for letter, limit in [("S", 1), ("A+", 12.5), ("A", 25), ("B+", 37.5), ("B", 62.5)]:
-        if pct <= limit:
-            return letter, pct
-    return "C", pct
+def fmt(day):
+    return day.strftime("%b %d, %Y") if day else "No active streak"
 
 
-def fmt(d):
-    return d.strftime("%b %d, %Y") if d else "-"
-
-
-def stats_svg(name, rows, letter, pct):
-    circ = 2 * 3.14159 * 40
-    dash = circ * (1 - pct / 100)
-    lines = "".join(
-        f'<text x="30" y="{80 + i * 25}" fill="#a9b1d6" font-size="14">{label}</text>'
-        f'<text x="230" y="{80 + i * 25}" fill="#7aa2f7" font-size="14" font-weight="700">{val}</text>'
-        for i, (label, val) in enumerate(rows)
-    )
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="495" height="215" viewBox="0 0 495 215" font-family="Segoe UI, Ubuntu, sans-serif">
-<rect width="495" height="215" rx="6" fill="#1a1b27" stroke="#6c5ce7" stroke-width="1.5"/>
-<text x="30" y="40" fill="#6c5ce7" font-size="19" font-weight="700">{name}'s GitHub Stats</text>
-{lines}
-<g transform="translate(400,115)">
-<circle r="40" fill="none" stroke="#2a2b3d" stroke-width="7"/>
-<circle r="40" fill="none" stroke="#6c5ce7" stroke-width="7" stroke-linecap="round" stroke-dasharray="{circ:.1f}" stroke-dashoffset="{dash:.1f}" transform="rotate(-90)"/>
-<text y="9" text-anchor="middle" fill="#a9b1d6" font-size="26" font-weight="700">{letter}</text>
+def svg_shell(width, height, title, subtitle, body):
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{html.escape(title)}. {html.escape(subtitle)}">
+<rect width="{width}" height="{height}" rx="18" fill="{BG}" stroke="{BORDER}"/>
+<rect x="1" y="1" width="{width - 2}" height="3" rx="1.5" fill="url(#accent)"/>
+<defs><linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#A78BFA"/><stop offset="0.34" stop-color="#F472B6"/><stop offset="0.67" stop-color="#FBBF24"/><stop offset="1" stop-color="#A3E635"/></linearGradient></defs>
+<g font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif">
+<text x="28" y="35" fill="{TEXT}" font-size="14" font-weight="700" letter-spacing="1.7">{html.escape(title)}</text>
+<text x="932" y="35" text-anchor="end" fill="{MUTED}" font-size="11" letter-spacing="0.8">{html.escape(subtitle)}</text>
+{body}
 </g>
 </svg>"""
 
 
-def streak_svg(total, cur, longest, first_day):
-    def col(x, big, label, sub, color):
-        return (
-            f'<text x="{x}" y="85" text-anchor="middle" fill="{color}" font-size="32" font-weight="700">{big}</text>'
-            f'<text x="{x}" y="115" text-anchor="middle" fill="{color}" font-size="14">{label}</text>'
-            f'<text x="{x}" y="138" text-anchor="middle" fill="#787c99" font-size="11">{sub}</text>'
-        )
+def tile(x, y, width, height, value, label, detail, color):
+    return f"""<g>
+<rect x="{x}" y="{y}" width="{width}" height="{height}" rx="13" fill="{CARD}" stroke="{BORDER}"/>
+<rect x="{x}" y="{y}" width="4" height="{height}" rx="2" fill="{color}"/>
+<text x="{x + 22}" y="{y + 52}" fill="{color}" font-size="38" font-weight="800" letter-spacing="-1">{value}</text>
+<text x="{x + 22}" y="{y + 80}" fill="{TEXT}" font-size="11" font-weight="700" letter-spacing="0.8">{html.escape(label)}</text>
+<text x="{x + 22}" y="{y + 100}" fill="{MUTED}" font-size="11">{html.escape(detail)}</text>
+</g>"""
 
-    cur_sub = f"{fmt(cur[1])} - {fmt(cur[2])}" if cur[0] else "Contribute today!"
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="495" height="170" viewBox="0 0 495 170" font-family="Segoe UI, Ubuntu, sans-serif">
-<rect width="495" height="170" rx="6" fill="#1a1b27" stroke="#6c5ce7" stroke-width="1.5"/>
-{col(82, total, "Total Contributions", f"{fmt(first_day)} - Present", "#7aa2f7")}
-<line x1="165" y1="45" x2="165" y2="130" stroke="#2a2b3d"/>
-{col(247, cur[0], "Current Streak", cur_sub, "#6c5ce7")}
-<line x1="330" y1="45" x2="330" y2="130" stroke="#2a2b3d"/>
-{col(412, longest[0], "Longest Streak", f"{fmt(longest[1])} - {fmt(longest[2])}", "#7aa2f7")}
-</svg>"""
+
+def stats_svg(public_repos, stars, pull_requests):
+    body = "".join([
+        tile(28, 58, 290, 120, public_repos, "PUBLIC REPOSITORIES", "Across this GitHub account", PALETTE[0]),
+        tile(335, 58, 290, 120, stars, "STARS RECEIVED", "Owned public, non-fork repositories", PALETTE[2]),
+        tile(642, 58, 290, 120, pull_requests, "PUBLIC PULL REQUESTS", "Authored across GitHub", PALETTE[3]),
+    ])
+    return svg_shell(960, 200, "PUBLIC GITHUB", f"VERIFIED {TODAY.strftime('%b %d, %Y').upper()}", body)
+
+
+def streak_svg(total, current, longest):
+    body = "".join([
+        tile(28, 58, 290, 120, total, "CONTRIBUTIONS · 12 MONTHS", "GitHub rolling-year total", PALETTE[1]),
+        tile(335, 58, 290, 120, current[0], "CURRENT STREAK", f"{fmt(current[1])} — {fmt(current[2])}", PALETTE[4]),
+        tile(642, 58, 290, 120, longest[0], "LONGEST STREAK · 12 MONTHS", f"{fmt(longest[1])} — {fmt(longest[2])}", PALETTE[5]),
+    ])
+    return svg_shell(960, 200, "CONTRIBUTION ACTIVITY", "PUBLIC ROLLING CALENDAR", body)
+
+
+def languages_svg(languages, repo_count):
+    total = sum(languages.values())
+    if total <= 0:
+        raise RuntimeError("No language bytes were returned")
+    ranked = sorted(languages.items(), key=lambda item: item[1], reverse=True)
+    visible = ranked[:5]
+    if len(ranked) > 5:
+        visible.append(("Other", sum(size for _, size in ranked[5:])))
+
+    segments = []
+    legends = []
+    cursor = 28.0
+    bar_width = 904.0
+    for index, (name, size) in enumerate(visible):
+        color = PALETTE[index % len(PALETTE)]
+        width = bar_width * size / total
+        if index == len(visible) - 1:
+            width = 932.0 - cursor
+        segments.append(
+            f'<rect x="{cursor:.2f}" y="62" width="{width:.2f}" height="22" fill="{color}"/>'
+        )
+        column = index % 3
+        row = index // 3
+        x = 28 + column * 307
+        y = 119 + row * 40
+        percent = size * 100 / total
+        legends.append(f"""<circle cx="{x + 6}" cy="{y - 5}" r="5" fill="{color}"/>
+<text x="{x + 20}" y="{y}" fill="{TEXT}" font-size="13" font-weight="600">{html.escape(name)}</text>
+<text x="{x + 270}" y="{y}" text-anchor="end" fill="{color}" font-size="13" font-weight="700">{percent:.1f}%</text>""")
+        cursor += width
+
+    body = f"""<g>{''.join(segments)}</g>
+{''.join(legends)}
+<text x="28" y="194" fill="{MUTED}" font-size="11">Code bytes across {repo_count} owned public, non-fork repositories</text>"""
+    return svg_shell(960, 214, "TOP LANGUAGES", "BY CODE BYTES · NOT REPOSITORY COUNT", body)
 
 
 def main():
-    u = gql(PROFILE_Q, {"login": USER})
-    cc = u["contributionsCollection"]
-    days = all_days(cc["contributionYears"])
-    cur, longest = streaks(days)
-    first_day = min((d for d, c in days.items() if c > 0), default=None)
-    total = sum(days.values())
+    profile = fetch_json(f"https://api.github.com/users/{USER}")
+    repos = fetch_json(f"https://api.github.com/users/{USER}/repos?per_page=100&type=owner&sort=updated")
+    owned = [repo for repo in repos if not repo["fork"]]
+    pull_requests = fetch_json(
+        f"https://api.github.com/search/issues?q=author%3A{USER}%20type%3Apr"
+    )["total_count"]
+    stars = sum(repo["stargazers_count"] for repo in owned)
 
-    stars = sum(n["stargazerCount"] for n in u["repositories"]["nodes"])
-    commits = cc["totalCommitContributions"]
-    prs = u["pullRequests"]["totalCount"]
-    issues = u["issues"]["totalCount"]
-    reviews = cc["totalPullRequestReviewContributions"]
-    followers = u["followers"]["totalCount"]
-    letter, pct = rank(commits, prs, issues, reviews, stars, followers)
+    languages = {}
+    for repo in owned:
+        for name, size in fetch_json(repo["languages_url"]).items():
+            languages[name] = languages.get(name, 0) + size
 
-    rows = [
-        ("Total Stars Earned:", stars),
-        ("Total Commits (last year):", commits),
-        ("Total PRs:", prs),
-        ("Total Issues:", issues),
-        ("Followers:", followers),
-    ]
+    total, days = contribution_data()
+    current, longest = streaks(days)
+
     OUT.mkdir(exist_ok=True)
-    (OUT / "stats.svg").write_text(stats_svg("Toka Nani", rows, letter, pct), encoding="utf-8")
-    (OUT / "streak.svg").write_text(streak_svg(total, cur, longest, first_day), encoding="utf-8")
+    (OUT / "stats.svg").write_text(
+        stats_svg(profile["public_repos"], stars, pull_requests), encoding="utf-8"
+    )
+    (OUT / "streak.svg").write_text(
+        streak_svg(total, current, longest), encoding="utf-8"
+    )
+    (OUT / "languages.svg").write_text(
+        languages_svg(languages, len(owned)), encoding="utf-8"
+    )
     print(
-        f"OK stars={stars} commits={commits} rank={letter} "
-        f"current={cur[0]} longest={longest[0]} total={total}"
+        f"OK repos={profile['public_repos']} stars={stars} prs={pull_requests} "
+        f"contributions={total} current={current[0]} longest={longest[0]} "
+        f"languages={len(languages)}"
     )
 
 
