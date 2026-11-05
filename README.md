@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./banner.svg" alt="Toka Nani — Applied AI and Cloud Engineer. Four deployed AI products, approximately 74 percent less prompt-token overhead, 37 passing tests, and 13+ hackathons." width="100%" />
+<img src="./banner.svg" alt="Toka Nani — Applied AI and Cloud Engineer. Four deployed AI products, ~40% token reduction in a published benchmark, 48 passing tests, and 13+ hackathons." width="100%" />
 
 <br />
 
@@ -32,7 +32,7 @@ I’m **Toka Nani**, an Applied AI and Cloud Engineer who takes products from id
 
 **What I built:** Middleware that combines Gemini `text-embedding-004` vectors with exponential recency-decay compression before each completion call.
 
-**Measured result:** **~74% less prompt-token overhead** in my own benchmark.
+**Measured result:** **~40% fewer prompt tokens at ~96% answer quality** — published benchmark in the repo (`benchmarks/RESULTS.md`: 370 → 221 tokens), reproducible with one command.
 
 `FastAPI` `Gemini 1.5 Flash` `Embeddings` `React 18` `Render`
 
@@ -60,7 +60,7 @@ I’m **Toka Nani**, an Applied AI and Cloud Engineer who takes products from id
 
 **What I built:** A multilingual civic decision-intelligence platform. Gemini detects language and categorizes complaints; a deterministic four-factor scoring engine ranks demand, infrastructure gaps, vulnerability, and investment overlap.
 
-**Engineering proof:** **37 passing pytest tests** for the scoring engine.
+**Engineering proof:** **48 passing pytest tests** across the CivicPulse backend.
 
 `FastAPI` `React` `TypeScript` `Vite` `Gemini`
 

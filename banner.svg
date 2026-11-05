@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
   <title id="title">Toka Nani — Applied AI and Cloud Engineer</title>
-  <desc id="desc">Open to internships. Four deployed AI products, approximately 74 percent less prompt-token overhead in a TokenFlow benchmark, 37 passing CivicPulse tests, and more than 13 hackathons.</desc>
+  <desc id="desc">Open to internships. Four deployed AI products, approximately 40 percent fewer prompt tokens in the published TokenFlow benchmark, 48 passing CivicPulse tests, and more than 13 hackathons.</desc>
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#070B14"/>
@@ -68,13 +68,13 @@
 
     <rect x="951" y="42" width="185" height="126" rx="14" fill="#111A2C" fill-opacity="0.92" stroke="#26334A"/>
     <rect x="951" y="42" width="3" height="126" rx="1.5" fill="#22D3EE"/>
-    <text x="973" y="98" class="metric" fill="#67E8F9">~74%</text>
-    <text x="973" y="127" class="label">LESS PROMPT-TOKEN</text>
-    <text x="973" y="146" class="label">OVERHEAD*</text>
+    <text x="973" y="98" class="metric" fill="#67E8F9">~40%</text>
+    <text x="973" y="127" class="label">TOKEN REDUCTION*</text>
+    <text x="973" y="146" class="label">PUBLISHED DATA*</text>
 
     <rect x="744" y="190" width="185" height="126" rx="14" fill="#111A2C" fill-opacity="0.92" stroke="#26334A"/>
     <rect x="744" y="190" width="3" height="126" rx="1.5" fill="#38BDF8"/>
-    <text x="766" y="246" class="metric" fill="#7DD3FC">37</text>
+    <text x="766" y="246" class="metric" fill="#7DD3FC">48</text>
     <text x="766" y="275" class="label">PASSING TESTS</text>
     <text x="766" y="294" class="label">CIVICPULSE ENGINE</text>
 
