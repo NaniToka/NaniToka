@@ -113,7 +113,10 @@ def svg_shell(width, height, title, subtitle, body):
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{html.escape(title)}. {html.escape(subtitle)}">
 <rect width="{width}" height="{height}" rx="18" fill="{BG}" stroke="{BORDER}"/>
 <rect x="1" y="1" width="{width - 2}" height="3" rx="1.5" fill="url(#accent)"/>
-<defs><linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#A78BFA"/><stop offset="0.34" stop-color="#F472B6"/><stop offset="0.67" stop-color="#FBBF24"/><stop offset="1" stop-color="#A3E635"/></linearGradient></defs>
+<defs><linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#A78BFA"/><stop offset="0.34" stop-color="#F472B6"/><stop offset="0.67" stop-color="#FBBF24"/><stop offset="1" stop-color="#A3E635"/><animateTransform attributeName="gradientTransform" type="translate" values="-0.6 0; 0.6 0; -0.6 0" dur="8s" repeatCount="indefinite"/></linearGradient>
+<linearGradient id="tileStroke" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A78BFA" stop-opacity="0.5"/><stop offset="1" stop-color="#A3E635" stop-opacity="0.5"/></linearGradient>
+<filter id="tileShadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#000000" flood-opacity="0.5"/></filter>
+</defs>
 <g font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif">
 <text x="28" y="35" fill="{TEXT}" font-size="14" font-weight="700" letter-spacing="1.7">{html.escape(title)}</text>
 <text x="932" y="35" text-anchor="end" fill="{MUTED}" font-size="11" letter-spacing="0.8">{html.escape(subtitle)}</text>
@@ -123,9 +126,13 @@ def svg_shell(width, height, title, subtitle, body):
 
 
 def tile(x, y, width, height, value, label, detail, color):
-    return f"""<g>
-<rect x="{x}" y="{y}" width="{width}" height="{height}" rx="13" fill="{CARD}" stroke="{BORDER}"/>
-<rect x="{x}" y="{y}" width="4" height="{height}" rx="2" fill="{color}"/>
+    begin = f"{(x - 28) / 300 * 1.2:.2f}s"
+    return f"""<g filter="url(#tileShadow)">
+<animateTransform attributeName="transform" type="translate" values="0 0; 0 -4; 0 0" dur="5s" begin="{begin}" repeatCount="indefinite"/>
+<rect x="{x}" y="{y}" width="{width}" height="{height}" rx="13" fill="{CARD}" stroke="url(#tileStroke)"/>
+<rect x="{x}" y="{y}" width="4" height="{height}" rx="2" fill="{color}">
+<animate attributeName="opacity" values="1;0.45;1" dur="3s" begin="{begin}" repeatCount="indefinite"/>
+</rect>
 <text x="{x + 22}" y="{y + 52}" fill="{color}" font-size="38" font-weight="800" letter-spacing="-1">{value}</text>
 <text x="{x + 22}" y="{y + 80}" fill="{TEXT}" font-size="11" font-weight="700" letter-spacing="0.8">{html.escape(label)}</text>
 <text x="{x + 22}" y="{y + 100}" fill="{MUTED}" font-size="11">{html.escape(detail)}</text>

@@ -1,25 +1,37 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="960" height="200" viewBox="0 0 960 200" role="img" aria-label="CONTRIBUTION ACTIVITY. PUBLIC ROLLING CALENDAR">
 <rect width="960" height="200" rx="18" fill="#0B1120" stroke="#2B3548"/>
 <rect x="1" y="1" width="958" height="3" rx="1.5" fill="url(#accent)"/>
-<defs><linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#A78BFA"/><stop offset="0.34" stop-color="#F472B6"/><stop offset="0.67" stop-color="#FBBF24"/><stop offset="1" stop-color="#A3E635"/></linearGradient></defs>
+<defs><linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#A78BFA"/><stop offset="0.34" stop-color="#F472B6"/><stop offset="0.67" stop-color="#FBBF24"/><stop offset="1" stop-color="#A3E635"/><animateTransform attributeName="gradientTransform" type="translate" values="-0.6 0; 0.6 0; -0.6 0" dur="8s" repeatCount="indefinite"/></linearGradient>
+<linearGradient id="tileStroke" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#A78BFA" stop-opacity="0.5"/><stop offset="1" stop-color="#A3E635" stop-opacity="0.5"/></linearGradient>
+<filter id="tileShadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#000000" flood-opacity="0.5"/></filter>
+</defs>
 <g font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif">
 <text x="28" y="35" fill="#E2E8F0" font-size="14" font-weight="700" letter-spacing="1.7">CONTRIBUTION ACTIVITY</text>
 <text x="932" y="35" text-anchor="end" fill="#94A3B8" font-size="11" letter-spacing="0.8">PUBLIC ROLLING CALENDAR</text>
-<g>
-<rect x="28" y="58" width="290" height="120" rx="13" fill="#111A2C" stroke="#2B3548"/>
-<rect x="28" y="58" width="4" height="120" rx="2" fill="#A3E635"/>
+<g filter="url(#tileShadow)">
+<animateTransform attributeName="transform" type="translate" values="0 0; 0 -4; 0 0" dur="5s" begin="0.00s" repeatCount="indefinite"/>
+<rect x="28" y="58" width="290" height="120" rx="13" fill="#111A2C" stroke="url(#tileStroke)"/>
+<rect x="28" y="58" width="4" height="120" rx="2" fill="#A3E635">
+<animate attributeName="opacity" values="1;0.45;1" dur="3s" begin="0.00s" repeatCount="indefinite"/>
+</rect>
 <text x="50" y="110" fill="#A3E635" font-size="38" font-weight="800" letter-spacing="-1">619</text>
 <text x="50" y="138" fill="#E2E8F0" font-size="11" font-weight="700" letter-spacing="0.8">CONTRIBUTIONS · 12 MONTHS</text>
 <text x="50" y="158" fill="#94A3B8" font-size="11">GitHub rolling-year total</text>
-</g><g>
-<rect x="335" y="58" width="290" height="120" rx="13" fill="#111A2C" stroke="#2B3548"/>
-<rect x="335" y="58" width="4" height="120" rx="2" fill="#2DD4BF"/>
+</g><g filter="url(#tileShadow)">
+<animateTransform attributeName="transform" type="translate" values="0 0; 0 -4; 0 0" dur="5s" begin="1.23s" repeatCount="indefinite"/>
+<rect x="335" y="58" width="290" height="120" rx="13" fill="#111A2C" stroke="url(#tileStroke)"/>
+<rect x="335" y="58" width="4" height="120" rx="2" fill="#2DD4BF">
+<animate attributeName="opacity" values="1;0.45;1" dur="3s" begin="1.23s" repeatCount="indefinite"/>
+</rect>
 <text x="357" y="110" fill="#2DD4BF" font-size="38" font-weight="800" letter-spacing="-1">19</text>
 <text x="357" y="138" fill="#E2E8F0" font-size="11" font-weight="700" letter-spacing="0.8">CURRENT STREAK</text>
 <text x="357" y="158" fill="#94A3B8" font-size="11">Oct 19, 2026 — Nov 06, 2026</text>
-</g><g>
-<rect x="642" y="58" width="290" height="120" rx="13" fill="#111A2C" stroke="#2B3548"/>
-<rect x="642" y="58" width="4" height="120" rx="2" fill="#FB7185"/>
+</g><g filter="url(#tileShadow)">
+<animateTransform attributeName="transform" type="translate" values="0 0; 0 -4; 0 0" dur="5s" begin="2.46s" repeatCount="indefinite"/>
+<rect x="642" y="58" width="290" height="120" rx="13" fill="#111A2C" stroke="url(#tileStroke)"/>
+<rect x="642" y="58" width="4" height="120" rx="2" fill="#FB7185">
+<animate attributeName="opacity" values="1;0.45;1" dur="3s" begin="2.46s" repeatCount="indefinite"/>
+</rect>
 <text x="664" y="110" fill="#FB7185" font-size="38" font-weight="800" letter-spacing="-1">19</text>
 <text x="664" y="138" fill="#E2E8F0" font-size="11" font-weight="700" letter-spacing="0.8">LONGEST STREAK · 12 MONTHS</text>
 <text x="664" y="158" fill="#94A3B8" font-size="11">Oct 19, 2026 — Nov 06, 2026</text>
