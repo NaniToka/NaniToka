@@ -135,17 +135,16 @@ I’m **Toka Nani**, an Applied AI and Cloud Engineer who takes products from id
 3. **Deploy early and instrument the result**—cost, latency, quality, or fairness.
 4. **Make the system understandable** through documentation, audit trails, and usable interfaces.
 
-<details>
-<summary><strong>GitHub activity</strong></summary>
-<br />
 <div align="center">
+
+## GitHub activity
+
   <img src="./assets/streak.svg" alt="Rolling 12-month GitHub contributions, current streak, and longest streak" width="100%" />
   <br /><br />
   <img src="./assets/languages.svg" alt="Top programming languages by code bytes across owned public repositories" width="100%" />
   <br /><br />
-  <img src="./assets/stats.svg" alt="Public GitHub repositories, stars received, and authored pull requests" width="100%" />
+  <img src="./assets/stats.svg" alt="Public GitHub repositories, stars received, authored pull requests, and computed GitHub rank" width="100%" />
 </div>
-</details>
 
 ---
 

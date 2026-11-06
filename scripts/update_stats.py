@@ -132,11 +132,24 @@ def tile(x, y, width, height, value, label, detail, color):
 </g>"""
 
 
-def stats_svg(public_repos, stars, pull_requests):
+def github_rank(stars, pull_requests, contributions):
+    score = stars * 10 + pull_requests * 50 + contributions * 0.5
+    for threshold, grade in (
+        (6000, "A++"), (4000, "A+"), (2500, "A"), (1500, "A-"),
+        (800, "B+"), (400, "B"),
+    ):
+        if score >= threshold:
+            return grade, score
+    return "B-", score
+
+
+def stats_svg(public_repos, stars, pull_requests, contributions):
+    grade, score = github_rank(stars, pull_requests, contributions)
     body = "".join([
-        tile(28, 58, 290, 120, public_repos, "PUBLIC REPOSITORIES", "Across this GitHub account", PALETTE[0]),
-        tile(335, 58, 290, 120, stars, "STARS RECEIVED", "Owned public, non-fork repositories", PALETTE[2]),
-        tile(642, 58, 290, 120, pull_requests, "PUBLIC PULL REQUESTS", "Authored across GitHub", PALETTE[3]),
+        tile(28, 58, 222, 120, public_repos, "PUBLIC REPOSITORIES", "Across this GitHub account", PALETTE[0]),
+        tile(262, 58, 222, 120, stars, "STARS RECEIVED", "Owned public, non-fork repositories", PALETTE[2]),
+        tile(496, 58, 222, 120, pull_requests, "PUBLIC PULL REQUESTS", "Authored across GitHub", PALETTE[3]),
+        tile(730, 58, 222, 120, grade, f"GITHUB RANK · SCORE {score:,.0f}", "STARSx10 + PRSx50 + CONTRIBx0.5", PALETTE[1]),
     ])
     return svg_shell(960, 200, "PUBLIC GITHUB", f"VERIFIED {TODAY.strftime('%b %d, %Y').upper()}", body)
 
@@ -206,7 +219,7 @@ def main():
 
     OUT.mkdir(exist_ok=True)
     (OUT / "stats.svg").write_text(
-        stats_svg(profile["public_repos"], stars, pull_requests), encoding="utf-8"
+        stats_svg(profile["public_repos"], stars, pull_requests, total), encoding="utf-8"
     )
     (OUT / "streak.svg").write_text(
         streak_svg(total, current, longest), encoding="utf-8"
