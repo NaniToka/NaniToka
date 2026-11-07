@@ -1,3 +1,5 @@
+<a name="top"></a>
+
 <div align="center">
 
 <img src="./banner.svg" alt="Toka Nani — Applied AI and Cloud Engineer. Four deployed AI products, ~40% token reduction in a published benchmark, 48 passing tests, and 13+ hackathons." width="100%" />
@@ -6,7 +8,7 @@
 
 [![Portfolio](https://img.shields.io/badge/PORTFOLIO-EXPLORE-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white)](https://toka-portfolio-2.onrender.com) [![Resume](https://img.shields.io/badge/RESUME-VIEW_PDF-0891B2?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://toka-portfolio-2.onrender.com/nani.pdf) [![LinkedIn](https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/toka-nani-33a124359) [![Email](https://img.shields.io/badge/EMAIL-LET'S_TALK-16A34A?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tokananiy@gmail.com)
 
-**[Selected work](#selected-work) · [Experience](#experience--recognition) · [Technical toolkit](#technical-toolkit) · [Contact](#lets-build-something-useful)**
+[![Home](https://img.shields.io/badge/HOME-TOP-0B1120?style=for-the-badge&logo=homeassistant&logoColor=A78BFA)](#top) [![Projects](https://img.shields.io/badge/PROJECTS-4_PRODUCTS-A78BFA?style=for-the-badge)](#selected-work) [![Experience](https://img.shields.io/badge/EXPERIENCE-ROLES-2DD4BF?style=for-the-badge)](#experience) [![Achievements](https://img.shields.io/badge/ACHIEVEMENTS-WINS-FBBF24?style=for-the-badge)](#achievements) [![Skills](https://img.shields.io/badge/SKILLS-TOOLKIT-F472B6?style=for-the-badge)](#technical-toolkit) [![Activity](https://img.shields.io/badge/ACTIVITY-LIVE-A3E635?style=for-the-badge)](#github-activity) [![Contact](https://img.shields.io/badge/CONTACT-HIRE_ME-FB7185?style=for-the-badge)](#lets-build-something-useful)
 
 </div>
 
@@ -87,17 +89,25 @@ I’m **Toka Nani**, an Applied AI and Cloud Engineer who takes products from id
 
 ---
 
-## Experience & recognition
+## Experience
 
 | Timeline | Role or milestone | What it demonstrates |
 |---|---|---|
 | **May 2026 — Present** | **Google Gemini Student Ambassador**, Google India | Leading AI workshops and developer sessions; communicating technical concepts to campus communities. |
 | **Sep — Oct 2026** | **Data Analyst Intern**, Bluestock Fintech | Built an end-to-end mutual-fund analytics pipeline with live AMFI NAV integration. |
+
+**Professional simulations:** JPMorgan Software Engineering · Walmart Global Tech Advanced SWE · Tata iQ GenAI Analytics.
+
+---
+
+## Achievements
+
+| Year | Milestone | Result |
+|---|---|---|
 | **2026** | **Google Solution Challenge** | Designed and shipped BiasGuard AI as a solo builder. |
 | **2026** | **PromptWars Virtual, Challenge 3** | Placed in the **Top 400**. |
 | **2026** | **Anvil @ Ascent**, Scaler School of Technology | **Grand Finale qualifier**. |
-
-**Professional simulations:** JPMorgan Software Engineering · Walmart Global Tech Advanced SWE · Tata iQ GenAI Analytics.
+| **13+** | **Hackathons** | Build. Learn. Ship. |
 
 <details>
 <summary><strong>Certifications & credentials</strong></summary>
