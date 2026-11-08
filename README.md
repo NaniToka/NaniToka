@@ -176,3 +176,4 @@ Open to immediate internship opportunities · Remote or relocation · Vijayawada
 
 </div>
 <!-- Engineering with discipline & continuous learning -->
+<!-- Building reliable AI systems with open standards -->
