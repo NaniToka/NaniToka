@@ -175,3 +175,4 @@ Open to immediate internship opportunities · Remote or relocation · Vijayawada
 <img src="./footer.svg" alt="Design. Build. Deploy. Measure." width="100%" />
 
 </div>
+<!-- Engineering with discipline & continuous learning -->
