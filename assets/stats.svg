@@ -32,7 +32,7 @@
 <rect x="496" y="58" width="4" height="120" rx="2" fill="#F472B6">
 <animate attributeName="opacity" values="1;0.45;1" dur="3s" begin="1.87s" repeatCount="indefinite"/>
 </rect>
-<text x="518" y="110" fill="#F472B6" font-size="38" font-weight="800" letter-spacing="-1">26</text>
+<text x="518" y="110" fill="#F472B6" font-size="38" font-weight="800" letter-spacing="-1">28</text>
 <text x="518" y="138" fill="#E2E8F0" font-size="11" font-weight="700" letter-spacing="0.8">PUBLIC PULL REQUESTS</text>
 <text x="518" y="158" fill="#94A3B8" font-size="11">Authored across GitHub</text>
 </g><g filter="url(#tileShadow)">
@@ -42,7 +42,7 @@
 <animate attributeName="opacity" values="1;0.45;1" dur="3s" begin="2.81s" repeatCount="indefinite"/>
 </rect>
 <text x="752" y="110" fill="#A3E635" font-size="38" font-weight="800" letter-spacing="-1">A</text>
-<text x="752" y="138" fill="#E2E8F0" font-size="11" font-weight="700" letter-spacing="0.8">GITHUB RANK · SCORE 3,822</text>
+<text x="752" y="138" fill="#E2E8F0" font-size="11" font-weight="700" letter-spacing="0.8">GITHUB RANK · SCORE 3,924</text>
 <text x="752" y="158" fill="#94A3B8" font-size="11">STARSx10 + PRSx50 + CONTRIBx0.5</text>
 </g>
 </g>
