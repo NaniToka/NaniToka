@@ -22,6 +22,6 @@
 <text x="605" y="159" text-anchor="end" fill="#2DD4BF" font-size="13" font-weight="700">0.6%</text><circle cx="648" cy="154" r="5" fill="#FB7185"/>
 <text x="662" y="159" fill="#E2E8F0" font-size="13" font-weight="600">Other</text>
 <text x="912" y="159" text-anchor="end" fill="#FB7185" font-size="13" font-weight="700">1.1%</text>
-<text x="28" y="194" fill="#94A3B8" font-size="11">Code bytes across 29 owned public, non-fork repositories</text>
+<text x="28" y="194" fill="#94A3B8" font-size="11">Code bytes across 30 owned public, non-fork repositories</text>
 </g>
 </svg>
