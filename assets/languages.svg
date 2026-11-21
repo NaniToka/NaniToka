@@ -8,14 +8,14 @@
 <g font-family="Inter, Segoe UI, Helvetica, Arial, sans-serif">
 <text x="28" y="35" fill="#E2E8F0" font-size="14" font-weight="700" letter-spacing="1.7">TOP LANGUAGES</text>
 <text x="932" y="35" text-anchor="end" fill="#94A3B8" font-size="11" letter-spacing="0.8">BY CODE BYTES · NOT REPOSITORY COUNT</text>
-<g><rect x="28.00" y="62" width="820.70" height="22" fill="#A78BFA"/><rect x="848.70" y="62" width="36.27" height="22" fill="#A3E635"/><rect x="884.98" y="62" width="17.96" height="22" fill="#FBBF24"/><rect x="902.94" y="62" width="10.53" height="22" fill="#F472B6"/><rect x="913.47" y="62" width="6.18" height="22" fill="#2DD4BF"/><rect x="919.65" y="62" width="12.35" height="22" fill="#FB7185"/></g>
+<g><rect x="28.00" y="62" width="818.86" height="22" fill="#A78BFA"/><rect x="846.86" y="62" width="36.19" height="22" fill="#A3E635"/><rect x="883.05" y="62" width="19.96" height="22" fill="#FBBF24"/><rect x="903.01" y="62" width="10.51" height="22" fill="#F472B6"/><rect x="913.51" y="62" width="6.17" height="22" fill="#2DD4BF"/><rect x="919.68" y="62" width="12.32" height="22" fill="#FB7185"/></g>
 <circle cx="34" cy="114" r="5" fill="#A78BFA"/>
 <text x="48" y="119" fill="#E2E8F0" font-size="13" font-weight="600">Python</text>
-<text x="298" y="119" text-anchor="end" fill="#A78BFA" font-size="13" font-weight="700">90.8%</text><circle cx="341" cy="114" r="5" fill="#A3E635"/>
+<text x="298" y="119" text-anchor="end" fill="#A78BFA" font-size="13" font-weight="700">90.6%</text><circle cx="341" cy="114" r="5" fill="#A3E635"/>
 <text x="355" y="119" fill="#E2E8F0" font-size="13" font-weight="600">TypeScript</text>
 <text x="605" y="119" text-anchor="end" fill="#A3E635" font-size="13" font-weight="700">4.0%</text><circle cx="648" cy="114" r="5" fill="#FBBF24"/>
 <text x="662" y="119" fill="#E2E8F0" font-size="13" font-weight="600">HTML</text>
-<text x="912" y="119" text-anchor="end" fill="#FBBF24" font-size="13" font-weight="700">2.0%</text><circle cx="34" cy="154" r="5" fill="#F472B6"/>
+<text x="912" y="119" text-anchor="end" fill="#FBBF24" font-size="13" font-weight="700">2.2%</text><circle cx="34" cy="154" r="5" fill="#F472B6"/>
 <text x="48" y="159" fill="#E2E8F0" font-size="13" font-weight="600">JavaScript</text>
 <text x="298" y="159" text-anchor="end" fill="#F472B6" font-size="13" font-weight="700">1.2%</text><circle cx="341" cy="154" r="5" fill="#2DD4BF"/>
 <text x="355" y="159" fill="#E2E8F0" font-size="13" font-weight="600">C</text>
