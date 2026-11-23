@@ -2,10 +2,22 @@
 
 <img src="./banner.svg" alt="Toka Nani — Applied AI and Cloud Engineer" width="100%" />
 
+<br />
+
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-EXPLORE-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white)](https://toka-portfolio-2.onrender.com) [![Resume](https://img.shields.io/badge/RESUME-VIEW_PDF-0891B2?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://toka-portfolio-2.onrender.com/nani.pdf) [![LinkedIn](https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/toka-nani-33a124359) [![Email](https://img.shields.io/badge/EMAIL-LET'S_TALK-16A34A?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tokananiy@gmail.com)
+
+<br /><br />
+
+## GitHub activity
+
+<img src="./assets/streak.svg" alt="Rolling 12-month GitHub contributions, current streak, and longest streak" width="100%" />
+<br /><br />
+<img src="./assets/languages.svg" alt="Top programming languages by code bytes across owned public repositories" width="100%" />
+<br /><br />
+<img src="./assets/stats.svg" alt="Public GitHub repositories, stars received, authored pull requests, and computed GitHub rank" width="100%" />
+
 <br /><br />
 
 <img src="./footer.svg" alt="Design. Build. Deploy. Measure." width="100%" />
 
 </div>
-<!-- Engineering with discipline & continuous learning -->
-<!-- Building reliable AI systems with open standards -->
