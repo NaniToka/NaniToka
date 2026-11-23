@@ -1,22 +1,24 @@
 <div align="center">
 
-<img src="./banner.svg" alt="Toka Nani — Applied AI and Cloud Engineer" width="100%" />
+<img src="./banner.svg" alt="Toka Nani — Cloud and GenAI Developer" width="100%" />
 
 <br />
 
-[![Portfolio](https://img.shields.io/badge/PORTFOLIO-EXPLORE-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white)](https://toka-portfolio-2.onrender.com) [![Resume](https://img.shields.io/badge/RESUME-VIEW_PDF-0891B2?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://toka-portfolio-2.onrender.com/nani.pdf) [![LinkedIn](https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/toka-nani-33a124359) [![Email](https://img.shields.io/badge/EMAIL-LET'S_TALK-16A34A?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tokananiy@gmail.com)
+[![Portfolio](https://img.shields.io/badge/PORTFOLIO-EXPLORE-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white)](https://toka-portfolio-2.onrender.com) [![Resume](https://img.shields.io/badge/RESUME-VIEW_PDF-3B82F6?style=for-the-badge&logo=adobeacrobatreader&logoColor=white)](https://toka-portfolio-2.onrender.com/nani.pdf) [![LinkedIn](https://img.shields.io/badge/LINKEDIN-CONNECT-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/toka-nani-33a124359) [![Email](https://img.shields.io/badge/EMAIL-LET'S_TALK-22C55E?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tokananiy@gmail.com)
 
 </div>
 
 <br />
 
-### 🔴 $\color{#FF4444}{\textsf{About Me}}$
+### About Me
 
-- 🔴 $\color{#FF4444}{\textsf{\textbf{Applied AI and Cloud Engineer} — Specializing in LLM cost optimization, responsible AI, and scalable cloud deployments.}}$
-- 🔴 $\color{#FF4444}{\textsf{\textbf{Google Gemini Student Ambassador} — Leading developer workshops and applied generative AI sessions with Google India.}}$
-- 🔴 $\color{#FF4444}{\textsf{\textbf{AWS Certified Solutions Architect} — Designing containerized cloud infrastructure across GCP, AWS, Docker, and CI/CD pipelines.}}$
-- 🔴 $\color{#FF4444}{\textsf{\textbf{4 Deployed AI Products} — Built TokenFlow AI (published benchmark with ~40 percent token savings) and BiasGuard AI.}}$
-- 🔴 $\color{#FF4444}{\textsf{\textbf{13+ Hackathons and Global Recognitions} — PromptWars Top 400 and Google Solution Challenge 2026 solo builder.}}$
+- 🚀 **Cloud and GenAI Developer** building production-oriented AI applications with Python, TypeScript, FastAPI, React, and Google Cloud.
+- 🎓 B.Tech CSE (2024–2028), DVR and Dr. HS MIC College of Technology, Vijayawada.
+- 🟡 **Google Gemini Student Ambassador** (May 2026 – present) — leading workshops and developer sessions on AI application development.
+- ☁️ **AWS Certified Solutions Architect – Associate** — designing scalable cloud infrastructure across AWS, GCP, Docker, and CI/CD.
+- 🔬 **CivicPulse AI** — multilingual civic decision-intelligence platform with 48 passing pytest tests (React, TypeScript, FastAPI, Gemini API).
+- 📊 **Mutual Fund Analytics Platform** — 9-table SQLite star schema, 86,000+ rows, 4-page Streamlit dashboard (Bluestock Fintech internship).
+- 💼 Currently seeking **Software Engineering, Cloud, and DevOps internships**. Open to remote and relocation.
 
 <br />
 
