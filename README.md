@@ -2,7 +2,7 @@
 
 # Hey 👋 I'm Toka Nani
 
-<img src="./assets/banner.png" width="100%" alt="Toka Nani — Cloud & GenAI Developer" />
+<img src="./assets/banner.gif" width="100%" alt="Toka Nani — Cloud & GenAI Developer" />
 
 </div>
 
@@ -19,7 +19,7 @@ Cloud & GenAI Developer building production-oriented AI applications with Python
 ## 📊 GitHub Stats & Trophies
 
 <p align="center">
-  <img src="https://www.gitskins.com/api/section/stats?username=NaniToka&theme=github-dark&style=aura" width="48.5%" alt="Profile Signal" />&nbsp;<img src="./assets/streak.svg" width="48.5%" alt="Contribution Streak" />
+  <img src="./assets/streak.svg" width="100%" alt="Contribution Streak" />
 </p>
 
 <p align="center">
