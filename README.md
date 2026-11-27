@@ -2,7 +2,7 @@
 
 # Hey 👋 I'm Toka Nani
 
-<img src="./assets/banner.gif" width="100%" alt="Coding Banner" style="border-radius: 12px;" />
+<img src="./assets/banner.gif" width="100%" alt="Coding Banner" />
 
 </div>
 
@@ -24,12 +24,15 @@
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=NaniToka&theme=algolia&no-frame=true&no-bg=true&row=1&column=7" width="100%" alt="Trophies" />
+<img src="https://github-profile-trophy.vercel.app/?username=NaniToka&theme=darkhub&no-frame=true&no-bg=true&margin-w=10&margin-h=10&column=-1" width="100%" alt="Trophies" />
 
 <br /><br />
 
-<img src="https://github-readme-stats.vercel.app/api?username=NaniToka&show_icons=true&theme=algolia&hide_border=true&bg_color=0D1117&title_color=7C3AED&icon_color=3B82F6&text_color=E6EDF3" width="49%" alt="GitHub Stats" />
-<img src="https://github-readme-streak-stats.herokuapp.com?user=NaniToka&theme=algolia&hide_border=true&background=0D1117&ring=7C3AED&fire=22C55E&currStreakLabel=E6EDF3" width="49%" alt="GitHub Streak" />
+<img src="./assets/stats.svg" width="100%" alt="GitHub Stats" />
+<br /><br />
+<img src="./assets/streak.svg" width="100%" alt="GitHub Streak" />
+<br /><br />
+<img src="./assets/languages.svg" width="100%" alt="Top Languages" />
 
 </div>
 
@@ -39,11 +42,11 @@
 
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=NaniToka&theme=github_dark" width="32%" alt="Language Stack" />
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=NaniToka&theme=github_dark" width="32%" alt="Profile Signal" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=NaniToka&theme=github_dark&utcOffset=5.5" width="32%" alt="Contribution Activity" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=NaniToka&theme=github_dark&utcOffset=5.5" width="32%" alt="Productive Time" />
 
 <br /><br />
 
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=NaniToka&theme=github_dark" width="100%" alt="Contribution Activity" />
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=NaniToka&theme=github_dark" width="100%" alt="Contribution Details" />
 
 </div>
 
@@ -93,7 +96,8 @@
 
 <p align="center">
 <a href="https://linkedin.com/in/toka-nani-33a124359"><img src="https://skillicons.dev/icons?i=linkedin&theme=dark" alt="LinkedIn" /></a>&nbsp;&nbsp;
-<a href="mailto:tokananiy@gmail.com"><img src="https://skillicons.dev/icons?i=gmail&theme=dark" alt="Email" /></a>
+<a href="mailto:tokananiy@gmail.com"><img src="https://skillicons.dev/icons?i=gmail&theme=dark" alt="Email" /></a>&nbsp;&nbsp;
+<a href="https://toka-portfolio-2.onrender.com/"><img src="https://img.shields.io/badge/PORTFOLIO-toka--portfolio-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
 </p>
 
 ---
