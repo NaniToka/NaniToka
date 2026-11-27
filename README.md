@@ -2,114 +2,109 @@
 
 # Hey 👋 I'm Toka Nani
 
-<img src="./assets/banner.gif" width="100%" alt="Coding Banner" />
+<img src="./assets/banner.png" width="100%" alt="Toka Nani — Cloud & GenAI Developer" />
 
 </div>
 
----
+## 📌 About Me
 
-## 🚀 About Me
+Cloud & GenAI Developer building production-oriented AI applications with Python, TypeScript, FastAPI, React, and Google Cloud.
 
-👇 Cloud & GenAI Developer building production-oriented AI applications with Python, TypeScript, FastAPI, React, and Google Cloud.
-
-- 🎓 B.Tech CSE (2024–2028) at DVR & Dr. HS MIC College of Technology, Vijayawada
+- 🎓 B.Tech CSE (2024–2028), DVR & Dr. HS MIC College of Technology, Vijayawada
 - 🟡 **Google Gemini Student Ambassador** — workshops and developer sessions on AI application development
 - ☁️ **AWS Certified Solutions Architect – Associate**
 - 🔬 Built **CivicPulse AI** (48 passing pytest tests) and **Mutual Fund Analytics Platform** (86,000+ rows)
-- 💼 Currently seeking **Software Engineering, Cloud, and DevOps internships**
-
----
+- 💼 Seeking **Software Engineering, Cloud, and DevOps internships**
 
 ## 📊 GitHub Stats & Trophies
 
-<div align="center">
-
-<img src="https://github-profile-trophy.vercel.app/?username=NaniToka&theme=darkhub&no-frame=true&no-bg=true&margin-w=10&margin-h=10&column=-1" width="100%" alt="Trophies" />
-
-<br /><br />
-
-<img src="./assets/stats.svg" width="100%" alt="GitHub Stats" />
-<br /><br />
-<img src="./assets/streak.svg" width="100%" alt="GitHub Streak" />
-<br /><br />
-<img src="./assets/languages.svg" width="100%" alt="Top Languages" />
-
-</div>
-
-<br />
-
-<div align="center">
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=NaniToka&theme=github_dark" width="32%" alt="Language Stack" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=NaniToka&theme=github_dark" width="32%" alt="Profile Signal" />
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=NaniToka&theme=github_dark&utcOffset=5.5" width="32%" alt="Productive Time" />
-
-<br /><br />
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=NaniToka&theme=github_dark" width="100%" alt="Contribution Details" />
-
-</div>
-
----
-
-## ⚡ Languages & Tools
-
-### Programming Languages
-
 <p align="center">
-<img src="https://skillicons.dev/icons?i=python,java,cpp,c,js,ts&theme=dark" alt="Languages" />
+  <img src="https://www.gitskins.com/api/section/stats?username=NaniToka&theme=github-dark&style=aura" width="48.5%" alt="Profile Signal" />&nbsp;<img src="https://github-readme-streak-stats.herokuapp.com/?user=NaniToka&theme=tokyonight&hide_border=true" width="48.5%" alt="GitHub Streak" />
 </p>
 
-### Frontend
-
 <p align="center">
-<img src="https://skillicons.dev/icons?i=react,html,css,tailwind,vite&theme=dark" alt="Frontend" />
+  <img src="https://www.gitskins.com/api/section/stack?username=NaniToka&theme=github-dark&style=aura" width="100%" alt="Language Stack" />
 </p>
 
-### Backend
-
 <p align="center">
-<img src="https://skillicons.dev/icons?i=fastapi,flask,nodejs&theme=dark" alt="Backend" />
+  <img src="https://www.gitskins.com/api/section/stats?username=NaniToka&theme=github-dark&style=aura" width="100%" alt="Profile Signal" />
 </p>
 
-### Database
-
 <p align="center">
-<img src="https://skillicons.dev/icons?i=sqlite,postgres,firebase&theme=dark" alt="Database" />
+  <img src="https://www.gitskins.com/api/section/heatmap?username=NaniToka&theme=github-dark&style=aura" width="100%" alt="Contribution Activity" />
 </p>
 
-### DevOps & Cloud
+## 🛠️ Languages & Tools
+
+## Programming Languages
 
 <p align="center">
-<img src="https://skillicons.dev/icons?i=aws,gcp,docker,githubactions,linux&theme=dark" alt="DevOps" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" height="40" alt="JavaScript" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" height="40" alt="TypeScript" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" height="40" alt="Python" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" height="40" alt="Java" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" height="40" alt="C++" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" height="40" alt="C" />
 </p>
 
-### Tools
+## Frontend
 
 <p align="center">
-<img src="https://skillicons.dev/icons?i=git,vscode,postman,figma&theme=dark" alt="Tools" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" height="40" alt="React" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" height="40" alt="HTML5" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" height="40" alt="CSS3" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" height="40" alt="Tailwind CSS" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg" height="40" alt="Vite" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/streamlit/streamlit-original.svg" height="40" alt="Streamlit" />
 </p>
 
----
+## Backend
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg" height="40" alt="FastAPI" />&nbsp;
+  <img src="https://img.icons8.com/ios-filled/50/FFFFFF/flask.png" height="40" alt="Flask" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" height="40" alt="Node.js" />
+</p>
+
+## Database
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sqlite/sqlite-original.svg" height="40" alt="SQLite" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" height="40" alt="PostgreSQL" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" height="40" alt="Firebase" />
+</p>
+
+## DevOps & Cloud
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" height="40" alt="Docker" />&nbsp;
+  <img src="https://img.icons8.com/color/48/amazon-web-services.png" height="40" alt="AWS" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/googlecloud/googlecloud-original.svg" height="40" alt="Google Cloud" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg" height="40" alt="GitHub Actions" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" height="40" alt="Linux" />
+</p>
+
+## Tools
+
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" height="40" alt="Git" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" height="40" alt="VS Code" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" height="40" alt="Figma" />&nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" height="40" alt="Postman" />
+</p>
 
 ## 🔗 Connect with Me
 
 <p align="center">
-<a href="https://linkedin.com/in/toka-nani-33a124359"><img src="https://skillicons.dev/icons?i=linkedin&theme=dark" alt="LinkedIn" /></a>&nbsp;&nbsp;
-<a href="mailto:tokananiy@gmail.com"><img src="https://skillicons.dev/icons?i=gmail&theme=dark" alt="Email" /></a>&nbsp;&nbsp;
-<a href="https://toka-portfolio-2.onrender.com/"><img src="https://img.shields.io/badge/PORTFOLIO-toka--portfolio-7C3AED?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" /></a>
+  <a href="https://linkedin.com/in/toka-nani-33a124359"><img src="https://img.icons8.com/color/48/linkedin-circled--v1.png" height="40" alt="LinkedIn" /></a>&nbsp;&nbsp;
+  <a href="mailto:tokananiy@gmail.com"><img src="https://img.icons8.com/color/48/gmail-new.png" height="40" alt="Email" /></a>&nbsp;&nbsp;
+  <a href="https://toka-portfolio-2.onrender.com/"><img src="https://img.icons8.com/color/48/domain--v1.png" height="40" alt="Portfolio" /></a>
 </p>
 
----
+<p align="center">
+  <img src="https://www.gitskins.com/api/section/heatmap?username=NaniToka&theme=github-dark&style=aura" width="100%" alt="Contribution Activity" />
+</p>
 
 <div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=NaniToka&theme=github-dark&hide_border=true&bg_color=0D1117&color=E6EDF3&line=7C3AED&point=22C55E" width="100%" alt="Contribution Graph" />
-
-</div>
-
----
-
-<div align="center">
-<sub>Toka Nani • made with ❤️ • Cloud & GenAI Developer</sub>
+<sub>Toka Nani • Cloud & GenAI Developer • generated with <a href="https://www.gitskins.com">GitSkins</a></sub>
 </div>
