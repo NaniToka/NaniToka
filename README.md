@@ -101,10 +101,6 @@ Cloud & GenAI Developer building production-oriented AI applications with Python
   <a href="https://toka-portfolio-2.onrender.com/"><img src="https://img.icons8.com/color/48/domain--v1.png" height="40" alt="Portfolio" /></a>
 </p>
 
-<p align="center">
-  <img src="https://www.gitskins.com/api/section/heatmap?username=NaniToka&theme=github-dark&style=aura" width="100%" alt="Contribution Activity" />
-</p>
-
 <div align="center">
-<sub>Toka Nani • Cloud & GenAI Developer • generated with <a href="https://www.gitskins.com">GitSkins</a></sub>
+<sub>Toka Nani</sub>
 </div>
