@@ -19,7 +19,7 @@ Cloud & GenAI Developer building production-oriented AI applications with Python
 ## 📊 GitHub Stats & Trophies
 
 <p align="center">
-  <img src="https://www.gitskins.com/api/section/stats?username=NaniToka&theme=github-dark&style=aura" width="48.5%" alt="Profile Signal" />&nbsp;<img src="https://github-readme-streak-stats.herokuapp.com/?user=NaniToka&theme=tokyonight&hide_border=true" width="48.5%" alt="GitHub Streak" />
+  <img src="https://www.gitskins.com/api/section/stats?username=NaniToka&theme=github-dark&style=aura" width="48.5%" alt="Profile Signal" />&nbsp;<img src="./assets/streak.svg" width="48.5%" alt="Contribution Streak" />
 </p>
 
 <p align="center">

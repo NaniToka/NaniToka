@@ -161,13 +161,99 @@ def stats_svg(public_repos, stars, pull_requests, contributions):
     return svg_shell(960, 200, "PUBLIC GITHUB", f"VERIFIED {TODAY.strftime('%b %d, %Y').upper()}", body)
 
 
+def fmt_short(day):
+    return day.strftime("%b %d, '%y") if day else "No active streak"
+
+
 def streak_svg(total, current, longest):
-    body = "".join([
-        tile(28, 58, 290, 120, total, "CONTRIBUTIONS · 12 MONTHS", "GitHub rolling-year total", PALETTE[1]),
-        tile(335, 58, 290, 120, current[0], "CURRENT STREAK", f"{fmt(current[1])} — {fmt(current[2])}", PALETTE[4]),
-        tile(642, 58, 290, 120, longest[0], "LONGEST STREAK · 12 MONTHS", f"{fmt(longest[1])} — {fmt(longest[2])}", PALETTE[5]),
-    ])
-    return svg_shell(960, 200, "CONTRIBUTION ACTIVITY", "PUBLIC ROLLING CALENDAR", body)
+    curr_range = f"{fmt_short(current[1])} — {fmt_short(current[2])}" if current[0] else "No active streak"
+    long_range = f"{fmt_short(longest[1])} — {fmt_short(longest[2])}" if longest[0] else "No streak recorded"
+    return f"""<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="260" viewBox="0 0 860 260" role="img" aria-label="Contribution Streak">
+  <defs>
+    <linearGradient id="streak-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="54%" stop-color="#161b22"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <radialGradient id="streak-orb-0" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58a6ff" stop-opacity="0.72"/>
+      <stop offset="58%" stop-color="#58a6ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#58a6ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="streak-orb-1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#39d353" stop-opacity="0.5"/>
+      <stop offset="58%" stop-color="#39d353" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#39d353" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="streak-orb-2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a371f7" stop-opacity="0.72"/>
+      <stop offset="58%" stop-color="#a371f7" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#a371f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="streak-orb-3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.5"/>
+      <stop offset="58%" stop-color="#22d3ee" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="streak-ring-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#58a6ff"/>
+      <stop offset="55%" stop-color="#a371f7"/>
+      <stop offset="100%" stop-color="#2ad5ef"/>
+    </linearGradient>
+  </defs>
+  <style>
+    #gs-streak .orb-a {{ animation: s-float-a 9s ease-in-out infinite; }}
+    #gs-streak .orb-b {{ animation: s-float-b 11s ease-in-out infinite 1.1s; }}
+    #gs-streak .orb-c {{ animation: s-float-c 13s ease-in-out infinite 0.6s; }}
+    #gs-streak .ring-p {{ animation: s-ring 8s ease-in-out infinite; }}
+    #gs-streak .bar-a {{ animation: s-bar 1.15s ease-out both; transform-box: fill-box; transform-origin: left; }}
+    @keyframes s-float-a {{ 0%,100% {{ transform: translate(0,0); opacity: .58; }} 50% {{ transform: translate(28px,-20px); opacity: .86; }} }}
+    @keyframes s-float-b {{ 0%,100% {{ transform: translate(0,0); opacity: .42; }} 50% {{ transform: translate(-24px,18px); opacity: .72; }} }}
+    @keyframes s-float-c {{ 0%,100% {{ transform: translate(0,0) scale(1); opacity: .34; }} 50% {{ transform: translate(18px,-12px) scale(1.18); opacity: .62; }} }}
+    @keyframes s-ring {{ 0%,100% {{ opacity: .06; }} 50% {{ opacity: .22; }} }}
+    @keyframes s-bar {{ from {{ opacity: 0.4; }} to {{ opacity: 0.95; }} }}
+  </style>
+  <g id="gs-streak" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif">
+    <rect width="860" height="260" rx="20" fill="url(#streak-bg)"/>
+    <ellipse class="orb-a" cx="138" cy="47" rx="206" ry="120" fill="url(#streak-orb-0)"/>
+    <ellipse class="orb-b" cx="654" cy="57" rx="241" ry="109" fill="url(#streak-orb-1)"/>
+    <ellipse class="orb-c" cx="499" cy="229" rx="310" ry="88" fill="url(#streak-orb-2)"/>
+    <ellipse class="orb-b" cx="826" cy="203" rx="172" ry="109" fill="url(#streak-orb-3)"/>
+
+    <circle class="ring-p" cx="760" cy="60" r="18" fill="none" stroke="#e6edf3" stroke-opacity="0.34"/>
+    <circle class="ring-p" cx="760" cy="60" r="32" fill="none" stroke="#e6edf3" stroke-opacity="0.20"/>
+    <circle cx="792" cy="60" r="3.5" fill="#58a6ff"/>
+
+    <rect x="28" y="26" width="804" height="206" rx="20" fill="rgba(8,8,12,0.5)" stroke="#58a6ff" stroke-opacity="0.48"/>
+    <text x="46" y="61" font-size="28" font-weight="850" letter-spacing="-0.5" fill="#e6edf3">Contribution Streak</text>
+    <text x="48" y="84" font-size="13" font-weight="650" letter-spacing="1.0" fill="#8b949e">Public rolling calendar · verified consistency</text>
+
+    <rect x="42" y="96" width="248" height="120" rx="18" fill="rgba(8,8,12,0.5)" stroke="#58a6ff" stroke-opacity="0.72"/>
+    <text x="64" y="126" font-size="12" font-weight="800" letter-spacing="1.2" fill="#8b949e">Total Contributions</text>
+    <text x="64" y="166" font-size="34" font-weight="900" letter-spacing="-0.8" fill="#58a6ff">{total:,}</text>
+    <text x="64" y="186" font-size="11" font-weight="600" fill="#8b949e">Rolling 12 months</text>
+    <rect x="64" y="198" width="204" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+    <rect class="bar-a" x="64" y="198" width="168" height="6" rx="3" fill="#58a6ff" opacity="0.9"/>
+
+    <rect x="306" y="96" width="248" height="120" rx="18" fill="rgba(8,8,12,0.5)" stroke="#a371f7" stroke-opacity="0.78"/>
+    <circle cx="430" cy="138" r="26" fill="none" stroke="url(#streak-ring-grad)" stroke-width="4.5"/>
+    <circle cx="430" cy="111" r="7" fill="#0d1117"/>
+    <path d="M430 103 c2.4 3.4 4.8 5.8 4.8 8.5 a4.8 4.8 0 0 1 -9.6 0 c0-2.7 2.4-5.1 4.8-8.5z" fill="#a371f7"/>
+    <text x="430" y="147" text-anchor="middle" font-size="25" font-weight="900" fill="#e6edf3">{current[0]}</text>
+    <text x="430" y="183" text-anchor="middle" font-size="12" font-weight="800" letter-spacing="1.0" fill="#a371f7">Current Streak</text>
+    <text x="430" y="201" text-anchor="middle" font-size="11" font-weight="600" fill="#8b949e">{html.escape(curr_range)}</text>
+
+    <rect x="570" y="96" width="248" height="120" rx="18" fill="rgba(8,8,12,0.5)" stroke="#58a6ff" stroke-opacity="0.72"/>
+    <text x="592" y="126" font-size="12" font-weight="800" letter-spacing="1.2" fill="#8b949e">Longest Streak</text>
+    <text x="592" y="166" font-size="34" font-weight="900" letter-spacing="-0.8" fill="#2ad5ef">{longest[0]}</text>
+    <text x="592" y="186" font-size="11" font-weight="600" fill="#8b949e">{html.escape(long_range)}</text>
+    <rect x="592" y="198" width="204" height="6" rx="3" fill="rgba(255,255,255,0.1)"/>
+    <rect class="bar-a" x="592" y="198" width="142" height="6" rx="3" fill="#2ad5ef" opacity="0.9"/>
+
+    <rect x="0.5" y="0.5" width="859" height="259" rx="19.5" fill="none" stroke="#58a6ff" stroke-opacity="0.62"/>
+  </g>
+</svg>"""
 
 
 def languages_svg(languages, repo_count):
