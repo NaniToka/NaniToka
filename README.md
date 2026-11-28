@@ -2,7 +2,7 @@
 
 # Hey 👋 I'm Toka Nani
 
-<img src="./assets/banner.gif" width="100%" alt="Toka Nani — Cloud & GenAI Developer" />
+<img src="./assets/banner-scene.gif" width="100%" alt="Toka Nani — Cloud & GenAI Developer" />
 
 </div>
 
